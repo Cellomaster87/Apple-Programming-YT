@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D6F172B266577EC0037ACE8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F172A266577EC0037ACE8 /* main.c */; };
+		2D6F173226657A840037ACE8 /* Test 1 Lessons 1-7.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F173126657A840037ACE8 /* Test 1 Lessons 1-7.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2D6F1727266577EC0037ACE8 /* Lesson 7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 7"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6F172A266577EC0037ACE8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2D6F173126657A840037ACE8 /* Test 1 Lessons 1-7.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Test 1 Lessons 1-7.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				2D6F172A266577EC0037ACE8 /* main.c */,
+				2D6F173126657A840037ACE8 /* Test 1 Lessons 1-7.c */,
 			);
 			path = "Lesson 7";
 			sourceTree = "<group>";
@@ -118,6 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6F173226657A840037ACE8 /* Test 1 Lessons 1-7.c in Sources */,
 				2D6F172B266577EC0037ACE8 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

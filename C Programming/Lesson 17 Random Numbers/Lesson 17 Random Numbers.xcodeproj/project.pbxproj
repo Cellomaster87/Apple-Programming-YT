@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DA6036326E15EE4001B8560 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6036226E15EE4001B8560 /* main.c */; };
+		2D13B71D27398F5B0093A9FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D13B71C27398F5B0093A9FB /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2DA6035D26E15EE4001B8560 /* CopyFiles */ = {
+		2D13B71727398F5B0093A9FB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2DA6035F26E15EE4001B8560 /* Lesson 16 Arrays */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 16 Arrays"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DA6036226E15EE4001B8560 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2D13B71927398F5B0093A9FB /* Lesson 17 Random Numbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 17 Random Numbers"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D13B71C27398F5B0093A9FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2DA6035C26E15EE4001B8560 /* Frameworks */ = {
+		2D13B71627398F5B0093A9FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,100 +38,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DA6035626E15EE4001B8560 = {
+		2D13B71027398F5B0093A9FB = {
 			isa = PBXGroup;
 			children = (
-				2DA6036126E15EE4001B8560 /* Lesson 16 Arrays */,
-				2DA6036026E15EE4001B8560 /* Products */,
+				2D13B71B27398F5B0093A9FB /* Lesson 17 Random Numbers */,
+				2D13B71A27398F5B0093A9FB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2DA6036026E15EE4001B8560 /* Products */ = {
+		2D13B71A27398F5B0093A9FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DA6035F26E15EE4001B8560 /* Lesson 16 Arrays */,
+				2D13B71927398F5B0093A9FB /* Lesson 17 Random Numbers */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2DA6036126E15EE4001B8560 /* Lesson 16 Arrays */ = {
+		2D13B71B27398F5B0093A9FB /* Lesson 17 Random Numbers */ = {
 			isa = PBXGroup;
 			children = (
-				2DA6036226E15EE4001B8560 /* main.c */,
+				2D13B71C27398F5B0093A9FB /* main.c */,
 			);
-			path = "Lesson 16 Arrays";
+			path = "Lesson 17 Random Numbers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2DA6035E26E15EE4001B8560 /* Lesson 16 Arrays */ = {
+		2D13B71827398F5B0093A9FB /* Lesson 17 Random Numbers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DA6036626E15EE4001B8560 /* Build configuration list for PBXNativeTarget "Lesson 16 Arrays" */;
+			buildConfigurationList = 2D13B72027398F5B0093A9FB /* Build configuration list for PBXNativeTarget "Lesson 17 Random Numbers" */;
 			buildPhases = (
-				2DA6035B26E15EE4001B8560 /* Sources */,
-				2DA6035C26E15EE4001B8560 /* Frameworks */,
-				2DA6035D26E15EE4001B8560 /* CopyFiles */,
+				2D13B71527398F5B0093A9FB /* Sources */,
+				2D13B71627398F5B0093A9FB /* Frameworks */,
+				2D13B71727398F5B0093A9FB /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Lesson 16 Arrays";
-			productName = "Lesson 16 Arrays";
-			productReference = 2DA6035F26E15EE4001B8560 /* Lesson 16 Arrays */;
+			name = "Lesson 17 Random Numbers";
+			productName = "Lesson 17 Random Numbers";
+			productReference = 2D13B71927398F5B0093A9FB /* Lesson 17 Random Numbers */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2DA6035726E15EE4001B8560 /* Project object */ = {
+		2D13B71127398F5B0093A9FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					2DA6035E26E15EE4001B8560 = {
-						CreatedOnToolsVersion = 12.5.1;
+					2D13B71827398F5B0093A9FB = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 2DA6035A26E15EE4001B8560 /* Build configuration list for PBXProject "Lesson 16 Arrays" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 2D13B71427398F5B0093A9FB /* Build configuration list for PBXProject "Lesson 17 Random Numbers" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2DA6035626E15EE4001B8560;
-			productRefGroup = 2DA6036026E15EE4001B8560 /* Products */;
+			mainGroup = 2D13B71027398F5B0093A9FB;
+			productRefGroup = 2D13B71A27398F5B0093A9FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2DA6035E26E15EE4001B8560 /* Lesson 16 Arrays */,
+				2D13B71827398F5B0093A9FB /* Lesson 17 Random Numbers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2DA6035B26E15EE4001B8560 /* Sources */ = {
+		2D13B71527398F5B0093A9FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA6036326E15EE4001B8560 /* main.c in Sources */,
+				2D13B71D27398F5B0093A9FB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2DA6036426E15EE4001B8560 /* Debug */ = {
+		2D13B71E27398F5B0093A9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -176,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -184,13 +185,13 @@
 			};
 			name = Debug;
 		};
-		2DA6036526E15EE4001B8560 /* Release */ = {
+		2D13B71F27398F5B0093A9FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -229,17 +230,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		2DA6036726E15EE4001B8560 /* Debug */ = {
+		2D13B72127398F5B0093A9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68Z4323Q26;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -247,10 +247,9 @@
 			};
 			name = Debug;
 		};
-		2DA6036826E15EE4001B8560 /* Release */ = {
+		2D13B72227398F5B0093A9FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68Z4323Q26;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -261,25 +260,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DA6035A26E15EE4001B8560 /* Build configuration list for PBXProject "Lesson 16 Arrays" */ = {
+		2D13B71427398F5B0093A9FB /* Build configuration list for PBXProject "Lesson 17 Random Numbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DA6036426E15EE4001B8560 /* Debug */,
-				2DA6036526E15EE4001B8560 /* Release */,
+				2D13B71E27398F5B0093A9FB /* Debug */,
+				2D13B71F27398F5B0093A9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DA6036626E15EE4001B8560 /* Build configuration list for PBXNativeTarget "Lesson 16 Arrays" */ = {
+		2D13B72027398F5B0093A9FB /* Build configuration list for PBXNativeTarget "Lesson 17 Random Numbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DA6036726E15EE4001B8560 /* Debug */,
-				2DA6036826E15EE4001B8560 /* Release */,
+				2D13B72127398F5B0093A9FB /* Debug */,
+				2D13B72227398F5B0093A9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2DA6035726E15EE4001B8560 /* Project object */;
+	rootObject = 2D13B71127398F5B0093A9FB /* Project object */;
 }

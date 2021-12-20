@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D6FE3CA276E409700F80B53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FE3C9276E409700F80B53 /* main.m */; };
+		2DC3901027711F5300D3042F /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3900F27711F5200D3042F /* Rectangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		2D6FE3C6276E409700F80B53 /* ObjC L3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ObjC L3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6FE3C9276E409700F80B53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DC3900E27711F5200D3042F /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		2DC3900F27711F5200D3042F /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				2D6FE3C9276E409700F80B53 /* main.m */,
+				2DC3900E27711F5200D3042F /* Rectangle.h */,
+				2DC3900F27711F5200D3042F /* Rectangle.m */,
 			);
 			path = "ObjC L3";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D6FE3CA276E409700F80B53 /* main.m in Sources */,
+				2DC3901027711F5300D3042F /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

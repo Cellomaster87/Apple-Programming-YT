@@ -15,9 +15,9 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        Rectangle *rect = [[Rectangle alloc] init];
         
-        
-        NSLog(@"Hello, World!");
+        NSLog(@"%@", rect);
     }
     return 0;
 }

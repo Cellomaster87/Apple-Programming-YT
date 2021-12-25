@@ -9,6 +9,21 @@
 
 @implementation Rectangle
 
+// Overriding the init
+// We have to return an object type: id is a pointer to an instance of a class
+// We need to initialise both the Rectangle and everything above it
+- (id)init {
+    // Call the initialiser of the superclass and return that object
+    self = [super init];
+    
+    if (self) { // also possible if (self = [super init] 
+        height = 6;
+        width = 4;
+    }
+    
+    return self;
+}
+
 - (void)setHeight:(int)newHeight {
     height = newHeight;
 }
@@ -31,7 +46,9 @@
 }
 
 - (NSString *)description {
-    return @"This is a rectangle class";
+    NSString *myString = [NSString stringWithFormat:@"Rect Height: %d, Width: %d", height, width];
+    
+    return myString;
 }
 
 @end

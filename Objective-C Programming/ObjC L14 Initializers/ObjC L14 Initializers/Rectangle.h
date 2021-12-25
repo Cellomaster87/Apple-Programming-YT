@@ -1,8 +1,8 @@
 //
 //  Rectangle.h
-//  ObjC L7
+//  ObjC L14
 //
-//  Created by Michele Galvagno on 25/12/21.
+//  Created by Michele Galvagno on 22/12/21.
 //
 
 #import <Foundation/Foundation.h>

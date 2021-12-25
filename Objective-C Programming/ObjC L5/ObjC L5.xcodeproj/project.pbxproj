@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D8B06CC27777CA200A71765 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B06CB27777CA200A71765 /* Rectangle.m */; };
 		2DA2A0E32773C89600961CBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A0E22773C89600961CBD /* main.m */; };
-		2DA2A0EB2773C8B000961CBD /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A0EA2773C8B000961CBD /* Rectangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D8B06CA27777CA200A71765 /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		2D8B06CB27777CA200A71765 /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 		2DA2A0DF2773C89600961CBD /* ObjC L5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ObjC L5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA2A0E22773C89600961CBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DA2A0E92773C8B000961CBD /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
-		2DA2A0EA2773C8B000961CBD /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				2DA2A0E22773C89600961CBD /* main.m */,
-				2DA2A0E92773C8B000961CBD /* Rectangle.h */,
-				2DA2A0EA2773C8B000961CBD /* Rectangle.m */,
+				2D8B06CA27777CA200A71765 /* Rectangle.h */,
+				2D8B06CB27777CA200A71765 /* Rectangle.m */,
 			);
 			path = "ObjC L5";
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA2A0E32773C89600961CBD /* main.m in Sources */,
-				2DA2A0EB2773C8B000961CBD /* Rectangle.m in Sources */,
+				2D8B06CC27777CA200A71765 /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

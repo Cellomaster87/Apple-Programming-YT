@@ -1,6 +1,6 @@
 //
 //  Rectangle.m
-//  ObjC L7
+//  ObjC L5
 //
 //  Created by Michele Galvagno on 25/12/21.
 //
@@ -35,3 +35,4 @@
 }
 
 @end
+

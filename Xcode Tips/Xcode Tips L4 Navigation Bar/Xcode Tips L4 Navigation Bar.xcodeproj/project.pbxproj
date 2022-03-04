@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D9BA22C27D2A425005429E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9BA22B27D2A425005429E1 /* main.m */; };
+		2DD5EC1C27D2A58F005A1C73 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5EC1B27D2A58F005A1C73 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		2D9BA22827D2A425005429E1 /* Xcode Tips L4 Navigation Bar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Xcode Tips L4 Navigation Bar"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9BA22B27D2A425005429E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DD5EC1A27D2A58F005A1C73 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		2DD5EC1B27D2A58F005A1C73 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				2D9BA22B27D2A425005429E1 /* main.m */,
+				2DD5EC1A27D2A58F005A1C73 /* Test.h */,
+				2DD5EC1B27D2A58F005A1C73 /* Test.m */,
 			);
 			path = "Xcode Tips L4 Navigation Bar";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D9BA22C27D2A425005429E1 /* main.m in Sources */,
+				2DD5EC1C27D2A58F005A1C73 /* Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

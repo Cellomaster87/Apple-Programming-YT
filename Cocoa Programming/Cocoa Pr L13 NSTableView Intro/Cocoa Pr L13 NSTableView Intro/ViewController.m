@@ -12,24 +12,41 @@
  */
 
 #import "ViewController.h"
+#import "Person.h"
+
+@interface ViewController ()
+
+@property (nonatomic) NSMutableArray *list;
+
+@end
 
 @implementation ViewController
 
-NSMutableArray *list;
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
-    list = [[NSMutableArray alloc] init];
+- (id)init
+{
+    if (self = [super init]) {
+        _list = [NSMutableArray array];
+    }
+    return self;
 }
 
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
+// (1) Number of rows in table view
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
+    return [_list count];
 }
 
+// (2) data for each row
+- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    Person *p = [_list objectAtIndex:row];
+    NSString *identifier = [tableColumn identifier];
+    
+    return [p valueForKey:identifier];
+}
 
+// Table View Controller methods
+- (IBAction)add:(id)sender {
+    Person *person = [[Person alloc] init];
+    [_list addObject:person];
+    [_tableView reloadData];
+}
 @end

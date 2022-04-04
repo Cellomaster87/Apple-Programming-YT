@@ -1,15 +1,18 @@
 //
 //  Person.h
-//  Cocoa Pr L13 NSTableView Intro
+//  Cocoa Pr L13-15
 //
-//  Created by Michele Galvagno on 03/04/22.
+//  Created by Michele Galvagno on 04/04/22.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person : NSObject
+@interface Person : NSObject {
+    NSString *name;
+    int age;
+}
 
 @property (copy) NSString *name;
 @property int age;

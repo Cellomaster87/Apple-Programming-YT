@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak) IBOutlet NSTableView *tableView;
 
 - (IBAction)add:(id)sender;
+- (IBAction)remove:(id)sender;
 
 
 @end

@@ -697,7 +697,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" headerView="N9b-Ty-p1R" id="CIX-1Z-bIi">
-                                    <rect key="frame" x="0.0" y="0.0" width="480.5" height="287"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="481" height="287"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="17" height="0.0"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -743,7 +743,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" wantsLayer="YES" id="N9b-Ty-p1R">
-                            <rect key="frame" x="0.0" y="0.0" width="480.5" height="28"/>
+                            <rect key="frame" x="0.0" y="0.0" width="481" height="28"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
@@ -765,6 +765,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="remove:" target="rtQ-In-LZr" id="pjN-ne-wHH"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

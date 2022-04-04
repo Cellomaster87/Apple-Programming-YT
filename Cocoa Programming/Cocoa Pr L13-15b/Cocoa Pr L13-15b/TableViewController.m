@@ -33,8 +33,27 @@ NSMutableArray *list;
     return [p valueForKey:identifier];
 }
 
+- (void)tableView:(NSTableView *)tableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    Person *p = [list objectAtIndex:row];
+    NSString *identifier = [tableColumn identifier];
+    [p setValue:object forKey:identifier];
+}
+
 - (IBAction)add:(id)sender {
     [list addObject:[[Person alloc] init]];
     [tableView reloadData];
 }
+
+- (IBAction)remove:(id)sender {
+    NSInteger row = [tableView selectedRow];
+    [tableView abortEditing]; // to avoid issue if pressing Remove while editing
+    
+    // Avoid issues when trying to remove something that doesn't exist
+    if (row != -1) {
+        [list removeObjectAtIndex:row];
+    }
+    
+    [tableView reloadData];
+}
+
 @end

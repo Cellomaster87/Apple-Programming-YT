@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D5D6F8D2805DFFD00F94D3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D6F8C2805DFFD00F94D3D /* AppDelegate.m */; };
+		2D5D6F902805DFFD00F94D3D /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D6F8F2805DFFD00F94D3D /* Document.m */; };
+		2D5D6F932805DFFD00F94D3D /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D6F912805DFFD00F94D3D /* Document.xib */; };
+		2D5D6F952805DFFF00F94D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D6F942805DFFF00F94D3D /* Assets.xcassets */; };
+		2D5D6F982805DFFF00F94D3D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D6F962805DFFF00F94D3D /* MainMenu.xib */; };
+		2D5D6F9B2805DFFF00F94D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D6F9A2805DFFF00F94D3D /* main.m */; };
+		2D5D6FA42805E13900F94D3D /* Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D6FA32805E13900F94D3D /* Assignment.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D5D6F882805DFFD00F94D3D /* Cocoa Pr L20 Grades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L20 Grades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5D6F8B2805DFFD00F94D3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D5D6F8C2805DFFD00F94D3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D5D6F8E2805DFFD00F94D3D /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		2D5D6F8F2805DFFD00F94D3D /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		2D5D6F922805DFFD00F94D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		2D5D6F942805DFFF00F94D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D5D6F972805DFFF00F94D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2D5D6F992805DFFF00F94D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5D6F9A2805DFFF00F94D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D5D6F9C2805DFFF00F94D3D /* Cocoa_Pr_L20_Grades.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L20_Grades.entitlements; sourceTree = "<group>"; };
+		2D5D6FA22805E13900F94D3D /* Assignment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
+		2D5D6FA32805E13900F94D3D /* Assignment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D5D6F852805DFFD00F94D3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D5D6F7F2805DFFD00F94D3D = {
+			isa = PBXGroup;
+			children = (
+				2D5D6F8A2805DFFD00F94D3D /* Cocoa Pr L20 Grades */,
+				2D5D6F892805DFFD00F94D3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D5D6F892805DFFD00F94D3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D5D6F882805DFFD00F94D3D /* Cocoa Pr L20 Grades.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D5D6F8A2805DFFD00F94D3D /* Cocoa Pr L20 Grades */ = {
+			isa = PBXGroup;
+			children = (
+				2D5D6F8B2805DFFD00F94D3D /* AppDelegate.h */,
+				2D5D6F8C2805DFFD00F94D3D /* AppDelegate.m */,
+				2D5D6F8E2805DFFD00F94D3D /* Document.h */,
+				2D5D6F8F2805DFFD00F94D3D /* Document.m */,
+				2D5D6F912805DFFD00F94D3D /* Document.xib */,
+				2D5D6FA22805E13900F94D3D /* Assignment.h */,
+				2D5D6FA32805E13900F94D3D /* Assignment.m */,
+				2D5D6F942805DFFF00F94D3D /* Assets.xcassets */,
+				2D5D6F962805DFFF00F94D3D /* MainMenu.xib */,
+				2D5D6F992805DFFF00F94D3D /* Info.plist */,
+				2D5D6F9A2805DFFF00F94D3D /* main.m */,
+				2D5D6F9C2805DFFF00F94D3D /* Cocoa_Pr_L20_Grades.entitlements */,
+			);
+			path = "Cocoa Pr L20 Grades";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D5D6F872805DFFD00F94D3D /* Cocoa Pr L20 Grades */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5D6F9F2805DFFF00F94D3D /* Build configuration list for PBXNativeTarget "Cocoa Pr L20 Grades" */;
+			buildPhases = (
+				2D5D6F842805DFFD00F94D3D /* Sources */,
+				2D5D6F852805DFFD00F94D3D /* Frameworks */,
+				2D5D6F862805DFFD00F94D3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cocoa Pr L20 Grades";
+			productName = "Cocoa Pr L20 Grades";
+			productReference = 2D5D6F882805DFFD00F94D3D /* Cocoa Pr L20 Grades.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D5D6F802805DFFD00F94D3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					2D5D6F872805DFFD00F94D3D = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 2D5D6F832805DFFD00F94D3D /* Build configuration list for PBXProject "Cocoa Pr L20 Grades" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D5D6F7F2805DFFD00F94D3D;
+			productRefGroup = 2D5D6F892805DFFD00F94D3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D5D6F872805DFFD00F94D3D /* Cocoa Pr L20 Grades */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D5D6F862805DFFD00F94D3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5D6F952805DFFF00F94D3D /* Assets.xcassets in Resources */,
+				2D5D6F932805DFFD00F94D3D /* Document.xib in Resources */,
+				2D5D6F982805DFFF00F94D3D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D5D6F842805DFFD00F94D3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5D6FA42805E13900F94D3D /* Assignment.m in Sources */,
+				2D5D6F902805DFFD00F94D3D /* Document.m in Sources */,
+				2D5D6F9B2805DFFF00F94D3D /* main.m in Sources */,
+				2D5D6F8D2805DFFD00F94D3D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D5D6F912805DFFD00F94D3D /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5D6F922805DFFD00F94D3D /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		2D5D6F962805DFFF00F94D3D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5D6F972805DFFF00F94D3D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D5D6F9D2805DFFF00F94D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2D5D6F9E2805DFFF00F94D3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2D5D6FA02805DFFF00F94D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L20 Grades/Cocoa_Pr_L20_Grades.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cocoa Pr L20 Grades/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L20-Grades";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		2D5D6FA12805DFFF00F94D3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L20 Grades/Cocoa_Pr_L20_Grades.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cocoa Pr L20 Grades/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L20-Grades";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D5D6F832805DFFD00F94D3D /* Build configuration list for PBXProject "Cocoa Pr L20 Grades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5D6F9D2805DFFF00F94D3D /* Debug */,
+				2D5D6F9E2805DFFF00F94D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5D6F9F2805DFFF00F94D3D /* Build configuration list for PBXNativeTarget "Cocoa Pr L20 Grades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5D6FA02805DFFF00F94D3D /* Debug */,
+				2D5D6FA12805DFFF00F94D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D5D6F802805DFFD00F94D3D /* Project object */;
+}

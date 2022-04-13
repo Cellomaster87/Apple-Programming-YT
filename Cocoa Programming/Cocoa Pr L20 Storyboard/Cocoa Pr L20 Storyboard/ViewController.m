@@ -2,13 +2,25 @@
 //  ViewController.m
 //  Cocoa Pr L20 Storyboard
 //
-//  Created by Michele Galvagno on 12/04/22.
+//  Created by Michele Galvagno on 13/04/22.
 //
 
 #import "ViewController.h"
-#import "Document.h"
+#import "Assignment.h"
 
 @implementation ViewController
+
+@synthesize assignments;
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        id assignment = [[Assignment alloc] init];
+        assignments = [[NSMutableArray alloc] initWithObjects:assignment, nil];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -18,7 +30,7 @@
 
 
 - (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
+    [super setRepresentedObject:assignments];
 
     // Update the view, if already loaded.
 }

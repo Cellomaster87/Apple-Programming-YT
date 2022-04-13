@@ -1,15 +1,16 @@
 //
-//  Assignments.h
+//  Assignment.h
 //  Cocoa Pr L20 Storyboard
 //
-//  Created by Michele Galvagno on 12/04/22.
+//  Created by Michele Galvagno on 13/04/22.
 //
 
 #import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Assignments : NSObject {
+@interface Assignment : NSObject {
     NSString *name;
     int grade;
 }

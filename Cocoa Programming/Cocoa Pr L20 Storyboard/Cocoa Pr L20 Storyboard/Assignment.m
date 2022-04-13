@@ -1,13 +1,13 @@
 //
-//  Assignments.m
+//  Assignment.m
 //  Cocoa Pr L20 Storyboard
 //
-//  Created by Michele Galvagno on 12/04/22.
+//  Created by Michele Galvagno on 13/04/22.
 //
 
-#import "Assignments.h"
+#import "Assignment.h"
 
-@implementation Assignments
+@implementation Assignment
 
 @synthesize name;
 @synthesize grade;

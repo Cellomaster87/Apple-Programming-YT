@@ -2,10 +2,11 @@
 //  Document.m
 //  Cocoa Pr L20 Storyboard
 //
-//  Created by Michele Galvagno on 12/04/22.
+//  Created by Michele Galvagno on 13/04/22.
 //
 
 #import "Document.h"
+#import "Assignment.h"
 
 @interface Document ()
 
@@ -15,10 +16,12 @@
 
 @synthesize assignments;
 
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
-        assignments = [[NSMutableArray alloc] init];
+        id assignment = [[Assignment alloc] init];
+        assignments = [[NSMutableArray alloc] initWithObjects:assignment, nil];
     }
     return self;
 }
@@ -30,12 +33,13 @@
 
 - (void)makeWindowControllers {
     // Override to return the Storyboard file name of the document.
-    /*
-    [self addWindowController:[[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"Document Window Controller"]];
-     */
-    NSWindowController *aWindowController = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"Document Window Controller"];
-    [self addWindowController:aWindowController];
-    aWindowController.contentViewController.representedObject = aWindowController.document;
+    
+    NSWindowController *wc = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"Document Window Controller"];
+    NSViewController *vc = wc.contentViewController;
+    vc.representedObject = self.assignments;
+    
+    [self addWindowController:wc];
+    
 }
 
 

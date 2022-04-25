@@ -26,5 +26,12 @@ int main(int argc, const char * argv[]) {
  9. Implement the changeView method, assigning the popup button's selected cell's tag to an NSInteger and changing the view controller to that tag.
  10. import FirstViewController.h and SecondViewController.h, then implement the changeViewController method.
  
+ SECOND PART
+ 1. Set the autoresizing mask in AppController.m
+ 2. Set all necessary constraints, especially for the label in the two view controllers (not present in the video)
+ 3. Add a button to the First View Controller
+ 4. in FirstViewController.h, add a textField property and a changeText IBAction;
+ 5. in FirstViewController.m, synthesize textField and implement changeText with a setStringValue call.
+ 
  
  */

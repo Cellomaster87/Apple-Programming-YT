@@ -46,6 +46,10 @@ NSString *const kSecondView = @"SecondViewController";
     
     [ourView addSubview:[ourViewController view]];
     [[ourViewController view] setFrame:[ourView bounds]];
+    
+    // Auto-layout code
+    // FIXME: this is not working
+    [[ourViewController view] setAutoresizingMask:NSViewHeightSizable|NSViewWidthSizable];
 }
 
 @end

@@ -12,10 +12,15 @@
 @end
 
 @implementation FirstViewController
+@synthesize textField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+}
+
+- (IBAction)changeText:(id)sender {
+    [textField setStringValue:@"Changed Value"];
 }
 
 @end

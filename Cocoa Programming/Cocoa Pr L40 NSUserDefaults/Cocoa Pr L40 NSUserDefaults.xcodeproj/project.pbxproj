@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DBC232F281AB266009586C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC232E281AB266009586C7 /* AppDelegate.m */; };
-		2DBC2331281AB268009586C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC2330281AB268009586C7 /* Assets.xcassets */; };
-		2DBC2334281AB268009586C7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC2332281AB268009586C7 /* MainMenu.xib */; };
-		2DBC2336281AB268009586C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC2335281AB268009586C7 /* main.m */; };
+		2D6EF1C8281BCE0700209C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6EF1C7281BCE0700209C39 /* AppDelegate.m */; };
+		2D6EF1CA281BCE0A00209C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6EF1C9281BCE0A00209C39 /* Assets.xcassets */; };
+		2D6EF1CD281BCE0A00209C39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6EF1CB281BCE0A00209C39 /* MainMenu.xib */; };
+		2D6EF1CF281BCE0A00209C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6EF1CE281BCE0A00209C39 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2DBC232A281AB266009586C7 /* Cocoa Pr L39 Screensaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L39 Screensaver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DBC232D281AB266009586C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2DBC232E281AB266009586C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DBC2330281AB268009586C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DBC2333281AB268009586C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2DBC2335281AB268009586C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DBC2337281AB268009586C7 /* Cocoa_Pr_L39_Screensaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L39_Screensaver.entitlements; sourceTree = "<group>"; };
+		2D6EF1C3281BCE0700209C39 /* Cocoa Pr L40 NSUserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L40 NSUserDefaults.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6EF1C6281BCE0700209C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D6EF1C7281BCE0700209C39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D6EF1C9281BCE0A00209C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D6EF1CC281BCE0A00209C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2D6EF1CE281BCE0A00209C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D6EF1D0281BCE0A00209C39 /* Cocoa_Pr_L40_NSUserDefaults.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L40_NSUserDefaults.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2DBC2327281AB266009586C7 /* Frameworks */ = {
+		2D6EF1C0281BCE0700209C39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,70 +34,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DBC2321281AB266009586C7 = {
+		2D6EF1BA281BCE0700209C39 = {
 			isa = PBXGroup;
 			children = (
-				2DBC232C281AB266009586C7 /* Cocoa Pr L39 Screensaver */,
-				2DBC232B281AB266009586C7 /* Products */,
+				2D6EF1C5281BCE0700209C39 /* Cocoa Pr L40 NSUserDefaults */,
+				2D6EF1C4281BCE0700209C39 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2DBC232B281AB266009586C7 /* Products */ = {
+		2D6EF1C4281BCE0700209C39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DBC232A281AB266009586C7 /* Cocoa Pr L39 Screensaver.app */,
+				2D6EF1C3281BCE0700209C39 /* Cocoa Pr L40 NSUserDefaults.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2DBC232C281AB266009586C7 /* Cocoa Pr L39 Screensaver */ = {
+		2D6EF1C5281BCE0700209C39 /* Cocoa Pr L40 NSUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				2DBC232D281AB266009586C7 /* AppDelegate.h */,
-				2DBC232E281AB266009586C7 /* AppDelegate.m */,
-				2DBC2330281AB268009586C7 /* Assets.xcassets */,
-				2DBC2332281AB268009586C7 /* MainMenu.xib */,
-				2DBC2335281AB268009586C7 /* main.m */,
-				2DBC2337281AB268009586C7 /* Cocoa_Pr_L39_Screensaver.entitlements */,
+				2D6EF1C6281BCE0700209C39 /* AppDelegate.h */,
+				2D6EF1C7281BCE0700209C39 /* AppDelegate.m */,
+				2D6EF1C9281BCE0A00209C39 /* Assets.xcassets */,
+				2D6EF1CB281BCE0A00209C39 /* MainMenu.xib */,
+				2D6EF1CE281BCE0A00209C39 /* main.m */,
+				2D6EF1D0281BCE0A00209C39 /* Cocoa_Pr_L40_NSUserDefaults.entitlements */,
 			);
-			path = "Cocoa Pr L39 Screensaver";
+			path = "Cocoa Pr L40 NSUserDefaults";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2DBC2329281AB266009586C7 /* Cocoa Pr L39 Screensaver */ = {
+		2D6EF1C2281BCE0700209C39 /* Cocoa Pr L40 NSUserDefaults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DBC233A281AB268009586C7 /* Build configuration list for PBXNativeTarget "Cocoa Pr L39 Screensaver" */;
+			buildConfigurationList = 2D6EF1D3281BCE0A00209C39 /* Build configuration list for PBXNativeTarget "Cocoa Pr L40 NSUserDefaults" */;
 			buildPhases = (
-				2DBC2326281AB266009586C7 /* Sources */,
-				2DBC2327281AB266009586C7 /* Frameworks */,
-				2DBC2328281AB266009586C7 /* Resources */,
+				2D6EF1BF281BCE0700209C39 /* Sources */,
+				2D6EF1C0281BCE0700209C39 /* Frameworks */,
+				2D6EF1C1281BCE0700209C39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Cocoa Pr L39 Screensaver";
-			productName = "Cocoa Pr L39 Screensaver";
-			productReference = 2DBC232A281AB266009586C7 /* Cocoa Pr L39 Screensaver.app */;
+			name = "Cocoa Pr L40 NSUserDefaults";
+			productName = "Cocoa Pr L40 NSUserDefaults";
+			productReference = 2D6EF1C3281BCE0700209C39 /* Cocoa Pr L40 NSUserDefaults.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2DBC2322281AB266009586C7 /* Project object */ = {
+		2D6EF1BB281BCE0700209C39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					2DBC2329281AB266009586C7 = {
+					2D6EF1C2281BCE0700209C39 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 2DBC2325281AB266009586C7 /* Build configuration list for PBXProject "Cocoa Pr L39 Screensaver" */;
+			buildConfigurationList = 2D6EF1BE281BCE0700209C39 /* Build configuration list for PBXProject "Cocoa Pr L40 NSUserDefaults" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -105,45 +105,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 2DBC2321281AB266009586C7;
-			productRefGroup = 2DBC232B281AB266009586C7 /* Products */;
+			mainGroup = 2D6EF1BA281BCE0700209C39;
+			productRefGroup = 2D6EF1C4281BCE0700209C39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2DBC2329281AB266009586C7 /* Cocoa Pr L39 Screensaver */,
+				2D6EF1C2281BCE0700209C39 /* Cocoa Pr L40 NSUserDefaults */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2DBC2328281AB266009586C7 /* Resources */ = {
+		2D6EF1C1281BCE0700209C39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DBC2331281AB268009586C7 /* Assets.xcassets in Resources */,
-				2DBC2334281AB268009586C7 /* MainMenu.xib in Resources */,
+				2D6EF1CA281BCE0A00209C39 /* Assets.xcassets in Resources */,
+				2D6EF1CD281BCE0A00209C39 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2DBC2326281AB266009586C7 /* Sources */ = {
+		2D6EF1BF281BCE0700209C39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DBC2336281AB268009586C7 /* main.m in Sources */,
-				2DBC232F281AB266009586C7 /* AppDelegate.m in Sources */,
+				2D6EF1CF281BCE0A00209C39 /* main.m in Sources */,
+				2D6EF1C8281BCE0700209C39 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2DBC2332281AB268009586C7 /* MainMenu.xib */ = {
+		2D6EF1CB281BCE0A00209C39 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2DBC2333281AB268009586C7 /* Base */,
+				2D6EF1CC281BCE0A00209C39 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2DBC2338281AB268009586C7 /* Debug */ = {
+		2D6EF1D1281BCE0A00209C39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		2DBC2339281AB268009586C7 /* Release */ = {
+		2D6EF1D2281BCE0A00209C39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,12 +260,12 @@
 			};
 			name = Release;
 		};
-		2DBC233B281AB268009586C7 /* Debug */ = {
+		2D6EF1D4281BCE0A00209C39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L39 Screensaver/Cocoa_Pr_L39_Screensaver.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L40 NSUserDefaults/Cocoa_Pr_L40_NSUserDefaults.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -280,18 +280,18 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L39-Screensaver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L40-NSUserDefaults";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
 		};
-		2DBC233C281AB268009586C7 /* Release */ = {
+		2D6EF1D5281BCE0A00209C39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L39 Screensaver/Cocoa_Pr_L39_Screensaver.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L40 NSUserDefaults/Cocoa_Pr_L40_NSUserDefaults.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -306,7 +306,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L39-Screensaver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L40-NSUserDefaults";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -315,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DBC2325281AB266009586C7 /* Build configuration list for PBXProject "Cocoa Pr L39 Screensaver" */ = {
+		2D6EF1BE281BCE0700209C39 /* Build configuration list for PBXProject "Cocoa Pr L40 NSUserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DBC2338281AB268009586C7 /* Debug */,
-				2DBC2339281AB268009586C7 /* Release */,
+				2D6EF1D1281BCE0A00209C39 /* Debug */,
+				2D6EF1D2281BCE0A00209C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DBC233A281AB268009586C7 /* Build configuration list for PBXNativeTarget "Cocoa Pr L39 Screensaver" */ = {
+		2D6EF1D3281BCE0A00209C39 /* Build configuration list for PBXNativeTarget "Cocoa Pr L40 NSUserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DBC233B281AB268009586C7 /* Debug */,
-				2DBC233C281AB268009586C7 /* Release */,
+				2D6EF1D4281BCE0A00209C39 /* Debug */,
+				2D6EF1D5281BCE0A00209C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2DBC2322281AB266009586C7 /* Project object */;
+	rootObject = 2D6EF1BB281BCE0700209C39 /* Project object */;
 }

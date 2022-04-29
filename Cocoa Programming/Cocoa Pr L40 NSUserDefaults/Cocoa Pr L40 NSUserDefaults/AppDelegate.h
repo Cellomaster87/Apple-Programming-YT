@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  Cocoa Pr L39 Screensaver
+//  Cocoa Pr L40 NSUserDefaults
 //
-//  Created by Michele Galvagno on 28/04/22.
+//  Created by Michele Galvagno on 29/04/22.
 //
 
 #import <Cocoa/Cocoa.h>

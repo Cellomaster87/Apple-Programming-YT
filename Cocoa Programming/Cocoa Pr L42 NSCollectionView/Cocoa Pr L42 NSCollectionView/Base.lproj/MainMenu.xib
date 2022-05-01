@@ -706,15 +706,12 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <collectionView id="g0j-D3-6Zj">
-                                    <rect key="frame" x="0.0" y="0.0" width="551" height="158"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="551" height="299"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="hSR-cI-RQL">
-                                        <size key="itemSize" width="50" height="50"/>
-                                    </collectionViewFlowLayout>
                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
                                         <binding destination="6wv-cK-Cb7" name="content" keyPath="arrangedObjects" id="tpd-8e-iJR"/>
-                                        <outlet property="itemPrototype" destination="GJE-xE-LwH" id="UGU-64-ZFQ"/>
+                                        <outlet property="itemPrototype" destination="GJE-xE-LwH" id="BA5-s4-7Vg"/>
                                     </connections>
                                 </collectionView>
                             </subviews>

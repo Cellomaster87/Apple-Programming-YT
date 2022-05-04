@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="arrayController" destination="5Xq-LE-Q0z" id="mVp-PN-Mfa"/>
                 <outlet property="tableView" destination="n5j-Uq-X3D" id="h1g-ky-nJH"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -21,11 +22,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="Cocoa Pr L44 SortingNSTableView" id="1Xt-HY-uBw">
+                <menuItem title="Cocoa Pr L45 SearchingNSTableView" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Cocoa Pr L44 SortingNSTableView" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="Cocoa Pr L45 SearchingNSTableView" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About Cocoa Pr L44 SortingNSTableView" id="5kV-Vb-QxS">
+                            <menuItem title="About Cocoa Pr L45 SearchingNSTableView" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -39,7 +40,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide Cocoa Pr L44 SortingNSTableView" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide Cocoa Pr L45 SearchingNSTableView" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -57,7 +58,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit Cocoa Pr L44 SortingNSTableView" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit Cocoa Pr L45 SearchingNSTableView" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -670,7 +671,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="Cocoa Pr L44 SortingNSTableView Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="Cocoa Pr L45 SearchingNSTableView Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -681,7 +682,7 @@
             </items>
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
-        <window title="Cocoa Pr L44 SortingNSTableView" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Cocoa Pr L45 SearchingNSTableView" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
@@ -741,7 +742,7 @@
                             <rect key="frame" x="1" y="276" width="438" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="mCl-40-Bsu">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="mCl-40-Bsu">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -770,26 +771,29 @@
                             <action selector="remove:" target="5Xq-LE-Q0z" id="lRy-Wx-bGi"/>
                         </connections>
                     </button>
-                    <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD5-cZ-RUg">
-                        <rect key="frame" x="290" y="321" width="170" height="22"/>
+                    <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDP-MP-F2E">
+                        <rect key="frame" x="289" y="319" width="171" height="22"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="170" id="5HT-Az-yD4"/>
+                            <constraint firstAttribute="width" constant="171" id="yT2-HU-3yG"/>
                         </constraints>
-                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="Kmh-u8-twT">
+                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="2cM-aa-bbR">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </searchFieldCell>
+                        <connections>
+                            <action selector="changePredicate:" target="Voe-Tx-rLC" id="rgm-Wp-pSL"/>
+                        </connections>
                     </searchField>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="DDP-MP-F2E" firstAttribute="trailing" secondItem="BRB-Pk-BeV" secondAttribute="trailing" id="2d6-y1-5JQ"/>
                     <constraint firstItem="PQT-I4-CRh" firstAttribute="leading" secondItem="OCh-AQ-ZAf" secondAttribute="trailing" constant="12" symbolic="YES" id="CFb-lr-f6o"/>
-                    <constraint firstItem="zD5-cZ-RUg" firstAttribute="trailing" secondItem="BRB-Pk-BeV" secondAttribute="trailing" id="KVM-d1-wWc"/>
+                    <constraint firstItem="DDP-MP-F2E" firstAttribute="centerY" secondItem="PQT-I4-CRh" secondAttribute="centerY" id="Pwr-kY-whR"/>
                     <constraint firstAttribute="bottom" secondItem="BRB-Pk-BeV" secondAttribute="bottom" constant="20" symbolic="YES" id="XSP-Ps-8Qs"/>
                     <constraint firstItem="OCh-AQ-ZAf" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="28" id="bbB-eh-9Ls"/>
                     <constraint firstItem="OCh-AQ-ZAf" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="cSX-ga-cAp"/>
                     <constraint firstAttribute="trailing" secondItem="BRB-Pk-BeV" secondAttribute="trailing" constant="20" symbolic="YES" id="fe6-9b-bVs"/>
-                    <constraint firstItem="BRB-Pk-BeV" firstAttribute="top" secondItem="zD5-cZ-RUg" secondAttribute="bottom" constant="8" symbolic="YES" id="g6A-ek-ujn"/>
                     <constraint firstItem="OCh-AQ-ZAf" firstAttribute="baseline" secondItem="PQT-I4-CRh" secondAttribute="baseline" id="mgg-1c-ee6"/>
                     <constraint firstItem="BRB-Pk-BeV" firstAttribute="top" secondItem="OCh-AQ-ZAf" secondAttribute="bottom" constant="7" id="uOM-vd-DL9"/>
                     <constraint firstItem="BRB-Pk-BeV" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="xnh-FG-Tut"/>

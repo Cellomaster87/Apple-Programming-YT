@@ -1,6 +1,6 @@
 //
 //  Person.h
-//  Cocoa Pr L45 SearchingNSTableView
+//  Cocoa Pr L44 SortingNSTableView
 //
 //  Created by Michele Galvagno on 03/05/22.
 //

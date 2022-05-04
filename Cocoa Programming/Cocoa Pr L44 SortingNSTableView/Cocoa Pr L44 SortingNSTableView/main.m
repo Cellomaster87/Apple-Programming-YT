@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Cocoa Pr L44 SortingNSTableView
+//  Cocoa Pr L45 SearchingNSTableView
 //
 //  Created by Michele Galvagno on 03/05/22.
 //
@@ -15,16 +15,11 @@ int main(int argc, const char * argv[]) {
 }
 
 /*!
- 1. Create a new Person class and add two properties to it: name and age. In .m file, add the - (id)init method. 
- 2. In AppDelegate: create a strong property for the people NSMutableArray and a weak property for an NSTableView; initialise the people's array!
- 3. MainMenu.xib:
-    a) add an Array Controller to the bench, set its class to Person and add name and age as keys; in Binding Inspector > Content Array > AppDelegate > people
-    b) add a Table View, set name and age as column headers, bind the value of the first column to Array Controller > arrangedObjects > name/age
-    c) add two buttons Add Remove and bind them to the correspondent methods in the Array Controller
-    d) Array Controller > Attributes Inspector > check Auto Rearrange Content
-    e) select name column > Attributes Inspector > Sort Key: name; Selector: caseInsensitiveCompare:
-        1. other options: Sort Key: name.length, Selector: compare:
-    f) remove those keys and move to
- 4. AppDelegate.m
-    a) in applicationDidFinishLaunching, implement the setSortDescriptors method of tableView to activate this programmatically
+ 1. Drag a Search Field to the canvas
+ 2. Search Field > Binding Inspector > Search > Predicate > Bind to Array Controller
+ 3. in "Predicate Format" change 'keyPath' to 'name', then add [cd] to 'contains', to make search case insensitive and to ignore diacriticals, then parenthesize the whole formula and add or (age ==$value.intValue)
+ 4. deselect the binding and set it in code. In AppController.m, add an NSPredicate *_searchPredicate property, then an action from the search field.
+ 5. in AppController.h, add a weak IBOutlet property for the NSArrayController (better to drag outlet from interface)
+ 6. in .m, set the _searchPredicate in the init method
+ 7. implement the changePredicate method
  */

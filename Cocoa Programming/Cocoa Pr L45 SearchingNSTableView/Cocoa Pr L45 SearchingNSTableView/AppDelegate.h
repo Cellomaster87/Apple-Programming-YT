@@ -15,6 +15,5 @@
 
 @property  NSMutableArray *people;
 
-
 @end
 

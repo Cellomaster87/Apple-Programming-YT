@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DF949C22824DD3700341428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF949C12824DD3700341428 /* AppDelegate.m */; };
+		2DF949C52824DD3700341428 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF949C42824DD3700341428 /* Document.m */; };
+		2DF949C82824DD3700341428 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DF949C62824DD3700341428 /* Document.xib */; };
+		2DF949CA2824DD3900341428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF949C92824DD3900341428 /* Assets.xcassets */; };
+		2DF949CD2824DD3900341428 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DF949CB2824DD3900341428 /* MainMenu.xib */; };
+		2DF949D02824DD3900341428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF949CF2824DD3900341428 /* main.m */; };
+		2DF949D92824E0C400341428 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF949D82824E0C400341428 /* MyView.m */; };
+		2DF949DC2824E0D800341428 /* MyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF949DB2824E0D800341428 /* MyWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DF949BD2824DD3700341428 /* Cocoa Pr L47 Responder Chain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L47 Responder Chain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF949C02824DD3700341428 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DF949C12824DD3700341428 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DF949C32824DD3700341428 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		2DF949C42824DD3700341428 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		2DF949C72824DD3700341428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		2DF949C92824DD3900341428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DF949CC2824DD3900341428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2DF949CE2824DD3900341428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DF949CF2824DD3900341428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DF949D12824DD3900341428 /* Cocoa_Pr_L47_Responder_Chain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L47_Responder_Chain.entitlements; sourceTree = "<group>"; };
+		2DF949D72824E0C400341428 /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		2DF949D82824E0C400341428 /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		2DF949DA2824E0D800341428 /* MyWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWindow.h; sourceTree = "<group>"; };
+		2DF949DB2824E0D800341428 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DF949BA2824DD3700341428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DF949B42824DD3700341428 = {
+			isa = PBXGroup;
+			children = (
+				2DF949BF2824DD3700341428 /* Cocoa Pr L47 Responder Chain */,
+				2DF949BE2824DD3700341428 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DF949BE2824DD3700341428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DF949BD2824DD3700341428 /* Cocoa Pr L47 Responder Chain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DF949BF2824DD3700341428 /* Cocoa Pr L47 Responder Chain */ = {
+			isa = PBXGroup;
+			children = (
+				2DF949C02824DD3700341428 /* AppDelegate.h */,
+				2DF949C12824DD3700341428 /* AppDelegate.m */,
+				2DF949C32824DD3700341428 /* Document.h */,
+				2DF949C42824DD3700341428 /* Document.m */,
+				2DF949C62824DD3700341428 /* Document.xib */,
+				2DF949D72824E0C400341428 /* MyView.h */,
+				2DF949D82824E0C400341428 /* MyView.m */,
+				2DF949DA2824E0D800341428 /* MyWindow.h */,
+				2DF949DB2824E0D800341428 /* MyWindow.m */,
+				2DF949C92824DD3900341428 /* Assets.xcassets */,
+				2DF949CB2824DD3900341428 /* MainMenu.xib */,
+				2DF949CE2824DD3900341428 /* Info.plist */,
+				2DF949CF2824DD3900341428 /* main.m */,
+				2DF949D12824DD3900341428 /* Cocoa_Pr_L47_Responder_Chain.entitlements */,
+			);
+			path = "Cocoa Pr L47 Responder Chain";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DF949BC2824DD3700341428 /* Cocoa Pr L47 Responder Chain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DF949D42824DD3900341428 /* Build configuration list for PBXNativeTarget "Cocoa Pr L47 Responder Chain" */;
+			buildPhases = (
+				2DF949B92824DD3700341428 /* Sources */,
+				2DF949BA2824DD3700341428 /* Frameworks */,
+				2DF949BB2824DD3700341428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cocoa Pr L47 Responder Chain";
+			productName = "Cocoa Pr L47 Responder Chain";
+			productReference = 2DF949BD2824DD3700341428 /* Cocoa Pr L47 Responder Chain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DF949B52824DD3700341428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					2DF949BC2824DD3700341428 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2DF949B82824DD3700341428 /* Build configuration list for PBXProject "Cocoa Pr L47 Responder Chain" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DF949B42824DD3700341428;
+			productRefGroup = 2DF949BE2824DD3700341428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DF949BC2824DD3700341428 /* Cocoa Pr L47 Responder Chain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DF949BB2824DD3700341428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DF949CA2824DD3900341428 /* Assets.xcassets in Resources */,
+				2DF949C82824DD3700341428 /* Document.xib in Resources */,
+				2DF949CD2824DD3900341428 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DF949B92824DD3700341428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DF949D92824E0C400341428 /* MyView.m in Sources */,
+				2DF949C52824DD3700341428 /* Document.m in Sources */,
+				2DF949D02824DD3900341428 /* main.m in Sources */,
+				2DF949DC2824E0D800341428 /* MyWindow.m in Sources */,
+				2DF949C22824DD3700341428 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DF949C62824DD3700341428 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DF949C72824DD3700341428 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		2DF949CB2824DD3900341428 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DF949CC2824DD3900341428 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DF949D22824DD3900341428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2DF949D32824DD3900341428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2DF949D52824DD3900341428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L47 Responder Chain/Cocoa_Pr_L47_Responder_Chain.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cocoa Pr L47 Responder Chain/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L47-Responder-Chain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		2DF949D62824DD3900341428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L47 Responder Chain/Cocoa_Pr_L47_Responder_Chain.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cocoa Pr L47 Responder Chain/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L47-Responder-Chain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DF949B82824DD3700341428 /* Build configuration list for PBXProject "Cocoa Pr L47 Responder Chain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DF949D22824DD3900341428 /* Debug */,
+				2DF949D32824DD3900341428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DF949D42824DD3900341428 /* Build configuration list for PBXNativeTarget "Cocoa Pr L47 Responder Chain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DF949D52824DD3900341428 /* Debug */,
+				2DF949D62824DD3900341428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DF949B52824DD3700341428 /* Project object */;
+}

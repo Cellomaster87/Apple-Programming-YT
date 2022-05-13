@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D496187282954C8005D5F24 /* Cocoa Pr L49 NSOutlineView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L49 NSOutlineView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D496187282954C8005D5F24 /* Cocoa Pr L50 NSOutlineView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L50 NSOutlineView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D49618A282954C8005D5F24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D49618B282954C8005D5F24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D49618D282954CA005D5F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		2D49617E282954C8005D5F24 = {
 			isa = PBXGroup;
 			children = (
-				2D496189282954C8005D5F24 /* Cocoa Pr L49 NSOutlineView */,
+				2D496189282954C8005D5F24 /* Cocoa Pr L50 NSOutlineView */,
 				2D496188282954C8005D5F24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,12 +51,12 @@
 		2D496188282954C8005D5F24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D496187282954C8005D5F24 /* Cocoa Pr L49 NSOutlineView.app */,
+				2D496187282954C8005D5F24 /* Cocoa Pr L50 NSOutlineView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D496189282954C8005D5F24 /* Cocoa Pr L49 NSOutlineView */ = {
+		2D496189282954C8005D5F24 /* Cocoa Pr L50 NSOutlineView */ = {
 			isa = PBXGroup;
 			children = (
 				2D49618A282954C8005D5F24 /* AppDelegate.h */,
@@ -70,15 +70,15 @@
 				2D49619D2829584B005D5F24 /* OutlineViewController.h */,
 				2D496194282954CA005D5F24 /* Cocoa_Pr_L49_NSOutlineView.entitlements */,
 			);
-			path = "Cocoa Pr L49 NSOutlineView";
+			path = "Cocoa Pr L50 NSOutlineView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D496186282954C8005D5F24 /* Cocoa Pr L49 NSOutlineView */ = {
+		2D496186282954C8005D5F24 /* Cocoa Pr L50 NSOutlineView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D496197282954CA005D5F24 /* Build configuration list for PBXNativeTarget "Cocoa Pr L49 NSOutlineView" */;
+			buildConfigurationList = 2D496197282954CA005D5F24 /* Build configuration list for PBXNativeTarget "Cocoa Pr L50 NSOutlineView" */;
 			buildPhases = (
 				2D496183282954C8005D5F24 /* Sources */,
 				2D496184282954C8005D5F24 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "Cocoa Pr L49 NSOutlineView";
+			name = "Cocoa Pr L50 NSOutlineView";
 			productName = "Cocoa Pr L49 NSOutlineView";
-			productReference = 2D496187282954C8005D5F24 /* Cocoa Pr L49 NSOutlineView.app */;
+			productReference = 2D496187282954C8005D5F24 /* Cocoa Pr L50 NSOutlineView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D496182282954C8005D5F24 /* Build configuration list for PBXProject "Cocoa Pr L49 NSOutlineView" */;
+			buildConfigurationList = 2D496182282954C8005D5F24 /* Build configuration list for PBXProject "Cocoa Pr L50 NSOutlineView" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D496186282954C8005D5F24 /* Cocoa Pr L49 NSOutlineView */,
+				2D496186282954C8005D5F24 /* Cocoa Pr L50 NSOutlineView */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L49 NSOutlineView/Cocoa_Pr_L49_NSOutlineView.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L50 NSOutlineView/Cocoa_Pr_L49_NSOutlineView.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -303,7 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L49 NSOutlineView/Cocoa_Pr_L49_NSOutlineView.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L50 NSOutlineView/Cocoa_Pr_L49_NSOutlineView.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D496182282954C8005D5F24 /* Build configuration list for PBXProject "Cocoa Pr L49 NSOutlineView" */ = {
+		2D496182282954C8005D5F24 /* Build configuration list for PBXProject "Cocoa Pr L50 NSOutlineView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D496195282954CA005D5F24 /* Debug */,
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D496197282954CA005D5F24 /* Build configuration list for PBXNativeTarget "Cocoa Pr L49 NSOutlineView" */ = {
+		2D496197282954CA005D5F24 /* Build configuration list for PBXNativeTarget "Cocoa Pr L50 NSOutlineView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D496198282954CA005D5F24 /* Debug */,

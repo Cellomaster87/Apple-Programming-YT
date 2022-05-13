@@ -20,11 +20,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="Cocoa Pr L49 NSOutlineView" id="1Xt-HY-uBw">
+                <menuItem title="Cocoa Pr L50 NSOutlineView" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Cocoa Pr L49 NSOutlineView" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="Cocoa Pr L50 NSOutlineView" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About Cocoa Pr L49 NSOutlineView" id="5kV-Vb-QxS">
+                            <menuItem title="About Cocoa Pr L50 NSOutlineView" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -38,7 +38,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide Cocoa Pr L49 NSOutlineView" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide Cocoa Pr L50 NSOutlineView" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -56,7 +56,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit Cocoa Pr L49 NSOutlineView" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit Cocoa Pr L50 NSOutlineView" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -669,7 +669,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="Cocoa Pr L49 NSOutlineView Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="Cocoa Pr L50 NSOutlineView Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -680,7 +680,7 @@
             </items>
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
-        <window title="Cocoa Pr L49 NSOutlineView" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Cocoa Pr L50 NSOutlineView" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
@@ -693,7 +693,7 @@
                         <rect key="frame" x="-1" y="60" width="482" height="301"/>
                         <clipView key="contentView" id="D7M-Qc-aBx">
                             <rect key="frame" x="1" y="1" width="480" height="299"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" headerView="k6J-Nh-7MI" indentationPerLevel="13" outlineTableColumn="aBr-Iq-yCR" id="A6E-ZB-tC8">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
@@ -735,10 +735,10 @@
                             </subviews>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="i4j-dH-ngz">
-                            <rect key="frame" x="1" y="345" width="480" height="16"/>
+                            <rect key="frame" x="1" y="284" width="480" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="ZV5-QG-9Rp">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="ZV5-QG-9Rp">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -748,7 +748,7 @@
                         </tableHeaderView>
                     </scrollView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZnM-sy-ahT">
-                        <rect key="frame" x="70" y="13" width="83" height="32"/>
+                        <rect key="frame" x="71" y="13" width="84" height="32"/>
                         <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aec-p0-0gH">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -761,7 +761,7 @@ CA
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x1H-6a-pJL">
-                        <rect key="frame" x="13" y="13" width="59" height="32"/>
+                        <rect key="frame" x="13" y="13" width="60" height="32"/>
                         <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TG9-Ct-nuE">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>

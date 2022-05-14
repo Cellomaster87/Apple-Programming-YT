@@ -11,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
                 <menuItem title="Lesson 51" id="56">
@@ -657,20 +657,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="495" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="934">
+                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="934">
                         <rect key="frame" x="-1" y="-1" width="497" height="362"/>
-                        <clipView key="contentView" id="I61-r9-YXT">
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" ambiguous="YES" id="I61-r9-YXT">
                             <rect key="frame" x="1" y="1" width="495" height="360"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" rowSizeStyle="automatic" headerView="937" viewBased="YES" id="935">
                                     <rect key="frame" x="0.0" y="0.0" width="495" height="332"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="MainCell" width="483.05078125" minWidth="40" maxWidth="1000" id="939">
+                                        <tableColumn identifier="MainCell" width="454.05078125" minWidth="40" maxWidth="1000" id="939">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -683,7 +684,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="MainCell" id="963">
-                                                    <rect key="frame" x="1" y="1" width="492" height="50"/>
+                                                    <rect key="frame" x="1" y="1" width="463" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView translatesAutoresizingMaskIntoConstraints="NO" id="964">
@@ -692,10 +693,10 @@
                                                                 <constraint firstAttribute="height" constant="47" id="985"/>
                                                                 <constraint firstAttribute="width" constant="47" id="1007"/>
                                                             </constraints>
-                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" catalog="system" id="967"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="967"/>
                                                         </imageView>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="965">
-                                                            <rect key="frame" x="56" y="17" width="435" height="16"/>
+                                                            <rect key="frame" x="56" y="17" width="406" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="966">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -729,7 +730,7 @@
                             <rect key="frame" x="1" y="345" width="480" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="938">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="938">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -739,14 +740,8 @@
                         </tableHeaderView>
                     </scrollView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="934" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="-1" id="944"/>
-                    <constraint firstItem="934" firstAttribute="top" secondItem="372" secondAttribute="top" constant="-1" id="946"/>
-                    <constraint firstAttribute="trailing" secondItem="934" secondAttribute="trailing" constant="-1" id="947"/>
-                    <constraint firstAttribute="bottom" secondItem="934" secondAttribute="bottom" constant="-1" id="990"/>
-                </constraints>
             </view>
-            <point key="canvasLocation" x="140" y="-156"/>
+            <point key="canvasLocation" x="139.5" y="-156"/>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
@@ -755,8 +750,9 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="jXB-TM-oAF"/>
     </objects>
     <resources>
-        <image name="NSActionTemplate" catalog="system" width="15" height="15"/>
+        <image name="NSActionTemplate" width="15" height="15"/>
     </resources>
 </document>

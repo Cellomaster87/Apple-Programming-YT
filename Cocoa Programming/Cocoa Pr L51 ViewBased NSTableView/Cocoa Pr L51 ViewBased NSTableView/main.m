@@ -31,4 +31,15 @@ int main(int argc, const char * argv[]) {
  4. MainMenu.xib
     a. connect the tableView data source and delegate to the AppDelegate 
  
+ Lesson 52
+ 1. MainMenu.xib
+    a. add a rounded textured button in the cell, remove the placeholder text, add an NSReveal indicator
+    b. set the TableView to allow for multiple selection (Attributes Inspector)
+    c. add two buttons "New Row" "Delete" below the table view.
+    d. assistant editor: create actions for the three buttons
+ 2. AppDelegate.m
+    a. add an @"filePath" key to the obj dictionary, tied to the filePath object
+    b. implement the locateInFinder: action
+    c. implement the removeSelectedRows: action
+    d. implement the insertNewRow: action
  */

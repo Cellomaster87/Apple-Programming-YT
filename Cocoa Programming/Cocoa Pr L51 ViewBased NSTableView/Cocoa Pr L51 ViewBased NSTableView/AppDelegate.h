@@ -12,5 +12,10 @@
 @property (strong) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSTableView *tableView;
 
+- (IBAction)insertNewRow:(id)sender;
+- (IBAction)removeSelectedRows:(id)sender;
+- (IBAction)locateInFinder:(id)sender;
+
+
 @end
 

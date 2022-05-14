@@ -654,24 +654,23 @@
             <rect key="contentRect" x="335" y="390" width="495" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="495" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="535" height="315"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="934">
-                        <rect key="frame" x="-1" y="-1" width="497" height="362"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <clipView key="contentView" ambiguous="YES" id="I61-r9-YXT">
-                            <rect key="frame" x="1" y="1" width="495" height="360"/>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="934">
+                        <rect key="frame" x="20" y="48" width="495" height="247"/>
+                        <clipView key="contentView" id="I61-r9-YXT">
+                            <rect key="frame" x="1" y="1" width="493" height="245"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" rowSizeStyle="automatic" headerView="937" viewBased="YES" id="935">
-                                    <rect key="frame" x="0.0" y="0.0" width="495" height="332"/>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" rowHeight="50" rowSizeStyle="automatic" headerView="937" viewBased="YES" id="935">
+                                    <rect key="frame" x="0.0" y="0.0" width="493" height="217"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="MainCell" width="454.05078125" minWidth="40" maxWidth="1000" id="939">
+                                        <tableColumn identifier="MainCell" width="480.55078125" minWidth="40" maxWidth="1000" id="939">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -684,7 +683,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="MainCell" id="963">
-                                                    <rect key="frame" x="1" y="1" width="463" height="50"/>
+                                                    <rect key="frame" x="1" y="1" width="490" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView translatesAutoresizingMaskIntoConstraints="NO" id="964">
@@ -696,20 +695,32 @@
                                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="967"/>
                                                         </imageView>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="965">
-                                                            <rect key="frame" x="56" y="17" width="406" height="16"/>
+                                                            <rect key="frame" x="56" y="17" width="400" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="966">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
+                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RhD-8R-VI2">
+                                                            <rect key="frame" x="461" y="13" width="27" height="23"/>
+                                                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSRevealFreestandingTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tPE-vF-dmI">
+                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                <font key="font" metaFont="system"/>
+                                                            </buttonCell>
+                                                            <connections>
+                                                                <action selector="locateInFinder:" target="494" id="n0k-7a-Fmv"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="964" firstAttribute="leading" secondItem="963" secondAttribute="leading" constant="3" id="975"/>
                                                         <constraint firstItem="965" firstAttribute="centerY" secondItem="964" secondAttribute="centerY" id="998"/>
                                                         <constraint firstItem="964" firstAttribute="centerY" secondItem="963" secondAttribute="centerY" id="1002"/>
                                                         <constraint firstItem="965" firstAttribute="leading" secondItem="964" secondAttribute="trailing" constant="8" symbolic="YES" id="1005"/>
-                                                        <constraint firstAttribute="trailing" secondItem="965" secondAttribute="trailing" constant="3" id="1006"/>
+                                                        <constraint firstAttribute="trailing" secondItem="965" secondAttribute="trailing" constant="36" id="1006"/>
+                                                        <constraint firstItem="RhD-8R-VI2" firstAttribute="centerY" secondItem="965" secondAttribute="centerY" id="VXg-0v-2bX"/>
+                                                        <constraint firstItem="RhD-8R-VI2" firstAttribute="leading" secondItem="965" secondAttribute="trailing" constant="8" symbolic="YES" id="jes-q5-BbO"/>
                                                     </constraints>
                                                     <connections>
                                                         <outlet property="imageView" destination="964" id="968"/>
@@ -727,7 +738,7 @@
                             </subviews>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="936">
-                            <rect key="frame" x="1" y="345" width="480" height="16"/>
+                            <rect key="frame" x="1" y="258" width="438" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="938">
@@ -735,11 +746,41 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" wantsLayer="YES" id="937">
-                            <rect key="frame" x="0.0" y="0.0" width="495" height="28"/>
+                            <rect key="frame" x="0.0" y="0.0" width="493" height="28"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i1P-ww-yTw">
+                        <rect key="frame" x="19" y="18" width="73" height="23"/>
+                        <buttonCell key="cell" type="roundTextured" title="New Row" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Ez-11-NOo">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="insertNewRow:" target="494" id="hX4-s5-kKQ"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vLt-IC-2zg">
+                        <rect key="frame" x="98" y="18" width="65" height="23"/>
+                        <buttonCell key="cell" type="roundTextured" title="Remove" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bvR-5K-KMe">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="removeSelectedRows:" target="494" id="3aB-zl-4aj"/>
+                        </connections>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="vLt-IC-2zg" firstAttribute="leading" secondItem="i1P-ww-yTw" secondAttribute="trailing" constant="8" symbolic="YES" id="8oQ-yP-aun"/>
+                    <constraint firstItem="934" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="CR4-5K-gDI"/>
+                    <constraint firstItem="i1P-ww-yTw" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="Gnh-OZ-cNd"/>
+                    <constraint firstAttribute="bottom" secondItem="i1P-ww-yTw" secondAttribute="bottom" constant="20" symbolic="YES" id="WT8-6H-fZe"/>
+                    <constraint firstItem="vLt-IC-2zg" firstAttribute="centerY" secondItem="i1P-ww-yTw" secondAttribute="centerY" id="mX2-1I-PAN"/>
+                    <constraint firstItem="i1P-ww-yTw" firstAttribute="top" secondItem="934" secondAttribute="bottom" constant="8" symbolic="YES" id="p7f-wl-Za8"/>
+                    <constraint firstAttribute="trailing" secondItem="934" secondAttribute="trailing" constant="20" symbolic="YES" id="s0J-IU-GbH"/>
+                    <constraint firstItem="934" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" symbolic="YES" id="tah-ES-oh9"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="139.5" y="-156"/>
         </window>
@@ -754,5 +795,6 @@
     </objects>
     <resources>
         <image name="NSActionTemplate" width="15" height="15"/>
+        <image name="NSRevealFreestandingTemplate" width="15" height="15"/>
     </resources>
 </document>

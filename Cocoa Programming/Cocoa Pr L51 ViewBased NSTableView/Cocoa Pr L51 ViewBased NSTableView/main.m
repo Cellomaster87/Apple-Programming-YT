@@ -42,4 +42,7 @@ int main(int argc, const char * argv[]) {
     b. implement the locateInFinder: action
     c. implement the removeSelectedRows: action
     d. implement the insertNewRow: action
+ 
+ Lesson 53: Working with groups
+ 
  */

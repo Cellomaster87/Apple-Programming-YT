@@ -39,14 +39,67 @@ NSString *const kImageCellIdentifier = @"ImageCell";
         }
     }
     [self.tableView reloadData];
+    [self.tableView registerForDraggedTypes:@[(id)kUTTypeFileURL]];
     [self.tableView setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
 }
 
-// MARK: - Table View Data Source & Delegate methods
+// MARK: - Table View Data Source methods
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return self.tableContents.count;
 }
 
+- (NSDictionary *)pasteboardReadingOptions {
+    return @{NSPasteboardURLReadingFileURLsOnlyKey: @YES,
+             NSPasteboardURLReadingContentsConformToTypesKey: [NSImage imageTypes]
+    };
+}
+
+- (BOOL)containsAcceptableURLsFromPasteboard:(NSPasteboard *)pasteboard {
+    return [pasteboard canReadObjectForClasses:@[[NSURL class] ] options:[self pasteboardReadingOptions]];
+}
+
+- (NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
+    if (dropOperation == NSTableViewDropAbove) {
+        if ([info draggingSource] == tableView) {
+            // Reorder, implement later
+        } else {
+            if ([self containsAcceptableURLsFromPasteboard:[info draggingPasteboard]]) {
+                info.animatesToDestination = YES;
+                return NSDragOperationCopy;
+            }
+        }
+    }
+    return NSDragOperationNone;
+}
+
+- (void)tableView:(NSTableView *)tableView updateDraggingItemsForDrag:(id<NSDraggingInfo>)draggingInfo {
+    if ([draggingInfo draggingSource] != tableView) {
+        NSArray *classes = @[[DesktopEntity class],[NSPasteboardItem class]];
+        NSTableCellView *tableCellView = [tableView makeViewWithIdentifier:@"ImageCell" owner:self];
+        // __block, this value sticks around outside of the block
+        __block NSInteger validCount = 0;
+        [draggingInfo enumerateDraggingItemsWithOptions:0 forView:tableView classes:classes searchOptions:nil usingBlock:^(NSDraggingItem * _Nonnull draggingItem, NSInteger idx, BOOL * _Nonnull stop) {
+            if ([draggingItem.item isKindOfClass:[DesktopEntity class]]) {
+                DesktopEntity *entity = (DesktopEntity *)draggingItem.item;
+                draggingItem.draggingFrame = [tableCellView frame];
+                draggingItem.imageComponentsProvider = ^NSArray<NSDraggingImageComponent *> * _Nonnull{
+                    if ([entity isKindOfClass:[DesktopImageEntity class]]) {
+                        [tableCellView.imageView setImage:[(DesktopImageEntity *)entity image]];
+                    }
+                    [tableCellView.textField setStringValue:entity.name];
+                    return [tableCellView draggingImageComponents];
+                };
+                validCount++;
+            } else {
+                draggingItem.imageComponentsProvider = nil;
+            }
+        }];
+        draggingInfo.numberOfValidItemsForDrop = validCount;
+        draggingInfo.draggingFormation = NSDraggingFormationList;
+    }
+}
+
+// MARK: - Table View Delegate methods
 - (id<NSPasteboardWriting>)tableView:(NSTableView *)tableView pasteboardWriterForRow:(NSInteger)row {
     return _tableContents[row];
 }

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DesktopEntity : NSObject <NSPasteboardWriting>
+@interface DesktopEntity : NSObject <NSPasteboardWriting, NSPasteboardReading>
 
 @property (strong, nonatomic) NSURL *fileURL;
 @property (strong, readonly) NSString *name;

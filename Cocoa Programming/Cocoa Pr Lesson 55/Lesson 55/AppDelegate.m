@@ -12,6 +12,8 @@
 @interface AppDelegate ()
 
 @property NSMutableArray *tableContents;
+@property NSRange objectRange;
+@property NSArray *currentlyDraggedObjects;
 
 @end
 
@@ -58,11 +60,28 @@ NSString *const kImageCellIdentifier = @"ImageCell";
     return [pasteboard canReadObjectForClasses:@[[NSURL class] ] options:[self pasteboardReadingOptions]];
 }
 
+- (void)tableView:(NSTableView *)tableView draggingSession:(NSDraggingSession *)session willBeginAtPoint:(NSPoint)screenPoint forRowIndexes:(NSIndexSet *)rowIndexes {
+    NSUInteger len = ([rowIndexes lastIndex] +1) - [rowIndexes firstIndex];
+    _objectRange = NSMakeRange([rowIndexes firstIndex], len);
+    _currentlyDraggedObjects = [_tableContents objectsAtIndexes:rowIndexes];
+}
+
+-(void)tableView:(NSTableView *)tableView draggingSession:(NSDraggingSession *)session endedAtPoint:(NSPoint)screenPoint operation:(NSDragOperation)operation {
+    _objectRange = NSMakeRange(0, 0);
+    _currentlyDraggedObjects = nil;
+}
+
 // Checks the item we're dragging
 - (NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
-    if (dropOperation == NSTableViewDropAbove) {
+    if (dropOperation == NSTableViewDropAbove && (_objectRange.location > row || _objectRange.length < row)) {
         if ([info draggingSource] == tableView) {
             // Reorder, implement later
+            if ([info draggingSourceOperationMask] == NSDragOperationCopy) {
+                info.animatesToDestination = YES;
+                return NSDragOperationCopy;
+            } else {
+                return NSDragOperationMove;
+            }
         } else {
             if ([self containsAcceptableURLsFromPasteboard:[info draggingPasteboard]]) {
                 info.animatesToDestination = YES;
@@ -102,8 +121,29 @@ NSString *const kImageCellIdentifier = @"ImageCell";
 }
 
 - (BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
-    [self performInsertWithDragInfo:info row:row];
+    if (_currentlyDraggedObjects == nil || [info draggingSourceOperationMask] == NSDragOperationCopy) {
+        [self performInsertWithDragInfo:info row:row];
+    } else {
+        [tableView beginUpdates];
+        [self performDragReorderWithDragInfo:info row:row];
+        [tableView endUpdates];
+    }
     return YES;
+}
+
+- (void)performDragReorderWithDragInfo:(id<NSDraggingInfo>)info row:(NSInteger)row {
+    NSArray *classes = @[[DesktopEntity class]];
+    [info enumerateDraggingItemsWithOptions:0 forView:_tableView classes:classes searchOptions:nil usingBlock:^(NSDraggingItem * _Nonnull draggingItem, NSInteger idx, BOOL * _Nonnull stop) {
+        NSInteger newIndex = row + idx;
+        DesktopEntity *entity = self->_currentlyDraggedObjects[idx];
+        NSInteger oldIndex = [self->_tableContents indexOfObject:entity];
+        if (oldIndex < newIndex) {
+            newIndex -= (idx+1);
+        }
+        [self->_tableContents removeObjectAtIndex:oldIndex];
+        [self->_tableContents insertObject:entity atIndex:newIndex];
+        [self->_tableView moveRowAtIndex:oldIndex toIndex:newIndex];
+    }];
 }
 
 - (void)performInsertWithDragInfo:(id<NSDraggingInfo>)info row:(NSInteger)row {

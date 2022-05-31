@@ -58,6 +58,7 @@ NSString *const kImageCellIdentifier = @"ImageCell";
     return [pasteboard canReadObjectForClasses:@[[NSURL class] ] options:[self pasteboardReadingOptions]];
 }
 
+// Checks the item we're dragging
 - (NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
     if (dropOperation == NSTableViewDropAbove) {
         if ([info draggingSource] == tableView) {
@@ -72,6 +73,7 @@ NSString *const kImageCellIdentifier = @"ImageCell";
     return NSDragOperationNone;
 }
 
+// Sorts out what items are valid for dragging
 - (void)tableView:(NSTableView *)tableView updateDraggingItemsForDrag:(id<NSDraggingInfo>)draggingInfo {
     if ([draggingInfo draggingSource] != tableView) {
         NSArray *classes = @[[DesktopEntity class],[NSPasteboardItem class]];
@@ -97,6 +99,23 @@ NSString *const kImageCellIdentifier = @"ImageCell";
         draggingInfo.numberOfValidItemsForDrop = validCount;
         draggingInfo.draggingFormation = NSDraggingFormationList;
     }
+}
+
+- (BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
+    [self performInsertWithDragInfo:info row:row];
+    return YES;
+}
+
+- (void)performInsertWithDragInfo:(id<NSDraggingInfo>)info row:(NSInteger)row {
+    NSArray *classes = @[[DesktopEntity class]];
+    __block NSInteger insertionIndex = row;
+    [info enumerateDraggingItemsWithOptions:0 forView:_tableView classes:classes searchOptions:nil usingBlock:^(NSDraggingItem * _Nonnull draggingItem, NSInteger idx, BOOL * _Nonnull stop) {
+        DesktopEntity *entity = draggingItem.item;
+        [self->_tableContents insertObject:entity atIndex:insertionIndex];
+        [self->_tableView insertRowsAtIndexes:[NSIndexSet indexSetWithIndex:insertionIndex] withAnimation:NSTableViewAnimationEffectGap];
+        draggingItem.draggingFrame = [self->_tableView frameOfCellAtColumn:0 row:insertionIndex];
+        insertionIndex++;
+    }];
 }
 
 // MARK: - Table View Delegate methods

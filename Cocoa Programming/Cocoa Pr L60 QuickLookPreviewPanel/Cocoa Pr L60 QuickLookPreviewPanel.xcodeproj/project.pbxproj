@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D086FF0284A1746003D71A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D086FEF284A1746003D71A0 /* AppDelegate.m */; };
+		2D086FF2284A174B003D71A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D086FF1284A174B003D71A0 /* Assets.xcassets */; };
+		2D086FF5284A174B003D71A0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D086FF3284A174B003D71A0 /* MainMenu.xib */; };
+		2D086FF7284A174B003D71A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D086FF6284A174B003D71A0 /* main.m */; };
+		2D087000284A29E0003D71A0 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D086FFF284A29E0003D71A0 /* Quartz.framework */; };
+		2D087003284A2A3F003D71A0 /* QuickLookTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D087002284A2A3F003D71A0 /* QuickLookTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D086FEB284A1746003D71A0 /* Cocoa Pr L60 QuickLookPreviewPanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L60 QuickLookPreviewPanel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D086FEE284A1746003D71A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D086FEF284A1746003D71A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D086FF1284A174B003D71A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D086FF4284A174B003D71A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2D086FF6284A174B003D71A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D086FF8284A174B003D71A0 /* Cocoa_Pr_L60_QuickLookPreviewPanel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L60_QuickLookPreviewPanel.entitlements; sourceTree = "<group>"; };
+		2D086FFF284A29E0003D71A0 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		2D087001284A2A3F003D71A0 /* QuickLookTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickLookTableView.h; sourceTree = "<group>"; };
+		2D087002284A2A3F003D71A0 /* QuickLookTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickLookTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D086FE8284A1746003D71A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D087000284A29E0003D71A0 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D086FE2284A1746003D71A0 = {
+			isa = PBXGroup;
+			children = (
+				2D086FED284A1746003D71A0 /* Cocoa Pr L60 QuickLookPreviewPanel */,
+				2D086FEC284A1746003D71A0 /* Products */,
+				2D086FFE284A29DF003D71A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D086FEC284A1746003D71A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D086FEB284A1746003D71A0 /* Cocoa Pr L60 QuickLookPreviewPanel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D086FED284A1746003D71A0 /* Cocoa Pr L60 QuickLookPreviewPanel */ = {
+			isa = PBXGroup;
+			children = (
+				2D086FEE284A1746003D71A0 /* AppDelegate.h */,
+				2D086FEF284A1746003D71A0 /* AppDelegate.m */,
+				2D087001284A2A3F003D71A0 /* QuickLookTableView.h */,
+				2D087002284A2A3F003D71A0 /* QuickLookTableView.m */,
+				2D086FF1284A174B003D71A0 /* Assets.xcassets */,
+				2D086FF3284A174B003D71A0 /* MainMenu.xib */,
+				2D086FF6284A174B003D71A0 /* main.m */,
+				2D086FF8284A174B003D71A0 /* Cocoa_Pr_L60_QuickLookPreviewPanel.entitlements */,
+			);
+			path = "Cocoa Pr L60 QuickLookPreviewPanel";
+			sourceTree = "<group>";
+		};
+		2D086FFE284A29DF003D71A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D086FFF284A29E0003D71A0 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D086FEA284A1746003D71A0 /* Cocoa Pr L60 QuickLookPreviewPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D086FFB284A174B003D71A0 /* Build configuration list for PBXNativeTarget "Cocoa Pr L60 QuickLookPreviewPanel" */;
+			buildPhases = (
+				2D086FE7284A1746003D71A0 /* Sources */,
+				2D086FE8284A1746003D71A0 /* Frameworks */,
+				2D086FE9284A1746003D71A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cocoa Pr L60 QuickLookPreviewPanel";
+			productName = "Cocoa Pr L60 QuickLookPreviewPanel";
+			productReference = 2D086FEB284A1746003D71A0 /* Cocoa Pr L60 QuickLookPreviewPanel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D086FE3284A1746003D71A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2D086FEA284A1746003D71A0 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 2D086FE6284A1746003D71A0 /* Build configuration list for PBXProject "Cocoa Pr L60 QuickLookPreviewPanel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D086FE2284A1746003D71A0;
+			productRefGroup = 2D086FEC284A1746003D71A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D086FEA284A1746003D71A0 /* Cocoa Pr L60 QuickLookPreviewPanel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D086FE9284A1746003D71A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D086FF2284A174B003D71A0 /* Assets.xcassets in Resources */,
+				2D086FF5284A174B003D71A0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D086FE7284A1746003D71A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D086FF7284A174B003D71A0 /* main.m in Sources */,
+				2D086FF0284A1746003D71A0 /* AppDelegate.m in Sources */,
+				2D087003284A2A3F003D71A0 /* QuickLookTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D086FF3284A174B003D71A0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D086FF4284A174B003D71A0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D086FF9284A174B003D71A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2D086FFA284A174B003D71A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2D086FFC284A174B003D71A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L60 QuickLookPreviewPanel/Cocoa_Pr_L60_QuickLookPreviewPanel.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L60-QuickLookPreviewPanel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		2D086FFD284A174B003D71A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L60 QuickLookPreviewPanel/Cocoa_Pr_L60_QuickLookPreviewPanel.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L60-QuickLookPreviewPanel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D086FE6284A1746003D71A0 /* Build configuration list for PBXProject "Cocoa Pr L60 QuickLookPreviewPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D086FF9284A174B003D71A0 /* Debug */,
+				2D086FFA284A174B003D71A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D086FFB284A174B003D71A0 /* Build configuration list for PBXNativeTarget "Cocoa Pr L60 QuickLookPreviewPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D086FFC284A174B003D71A0 /* Debug */,
+				2D086FFD284A174B003D71A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D086FE3284A1746003D71A0 /* Project object */;
+}

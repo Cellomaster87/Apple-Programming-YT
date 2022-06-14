@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="view" destination="aNa-p7-wct" id="POV-AE-5EZ"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -693,10 +694,30 @@
                         <rect key="frame" x="165" y="105" width="150" height="150"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <gestureRecognizers>
-                            <pressGestureRecognizer delaysPrimaryMouseButtonEvents="YES" id="mxw-bJ-Zab"/>
-                            <panGestureRecognizer delaysPrimaryMouseButtonEvents="YES" id="qHR-Iy-wrT"/>
-                            <magnificationGestureRecognizer delaysMagnificationEvents="YES" magnification="0.0" id="3Qa-ra-HSD"/>
-                            <rotationGestureRecognizer delaysRotationEvents="YES" id="Vro-1k-vSm"/>
+                            <pressGestureRecognizer delaysPrimaryMouseButtonEvents="YES" id="mxw-bJ-Zab">
+                                <connections>
+                                    <action selector="pressView:" target="Voe-Tx-rLC" id="zG7-aC-IAi"/>
+                                    <outlet property="delegate" destination="Voe-Tx-rLC" id="G4h-0G-Ir1"/>
+                                </connections>
+                            </pressGestureRecognizer>
+                            <panGestureRecognizer delaysPrimaryMouseButtonEvents="YES" id="qHR-Iy-wrT">
+                                <connections>
+                                    <action selector="panView:" target="Voe-Tx-rLC" id="6K3-hr-1Yy"/>
+                                    <outlet property="delegate" destination="Voe-Tx-rLC" id="vkV-OY-Sim"/>
+                                </connections>
+                            </panGestureRecognizer>
+                            <magnificationGestureRecognizer delaysMagnificationEvents="YES" magnification="0.0" id="3Qa-ra-HSD">
+                                <connections>
+                                    <action selector="magnifyView:" target="Voe-Tx-rLC" id="r9G-Jo-TE7"/>
+                                    <outlet property="delegate" destination="Voe-Tx-rLC" id="rgu-T9-J9S"/>
+                                </connections>
+                            </magnificationGestureRecognizer>
+                            <rotationGestureRecognizer delaysRotationEvents="YES" id="Vro-1k-vSm">
+                                <connections>
+                                    <action selector="rotateView:" target="Voe-Tx-rLC" id="byi-OP-DMJ"/>
+                                    <outlet property="delegate" destination="Voe-Tx-rLC" id="lxx-f3-lXq"/>
+                                </connections>
+                            </rotationGestureRecognizer>
                         </gestureRecognizers>
                     </customView>
                 </subviews>

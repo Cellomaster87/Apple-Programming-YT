@@ -11,6 +11,7 @@
 		2DC87BF32857907D00B14D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC87BF22857907D00B14D4A /* Assets.xcassets */; };
 		2DC87BF62857907D00B14D4A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC87BF42857907D00B14D4A /* MainMenu.xib */; };
 		2DC87BF82857907D00B14D4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87BF72857907D00B14D4A /* main.m */; };
+		2DC87C422859012700B14D4A /* NSColor+NSColor_RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87C412859012700B14D4A /* NSColor+NSColor_RandomColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		2DC87BF52857907D00B14D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2DC87BF72857907D00B14D4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DC87BF92857907D00B14D4A /* Cocoa_Pr_L64_NSGestureRecognizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L64_NSGestureRecognizer.entitlements; sourceTree = "<group>"; };
+		2DC87C402859012700B14D4A /* NSColor+NSColor_RandomColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+NSColor_RandomColor.h"; sourceTree = "<group>"; };
+		2DC87C412859012700B14D4A /* NSColor+NSColor_RandomColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+NSColor_RandomColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,8 @@
 			children = (
 				2DC87BEF2857907800B14D4A /* AppDelegate.h */,
 				2DC87BF02857907800B14D4A /* AppDelegate.m */,
+				2DC87C402859012700B14D4A /* NSColor+NSColor_RandomColor.h */,
+				2DC87C412859012700B14D4A /* NSColor+NSColor_RandomColor.m */,
 				2DC87BF22857907D00B14D4A /* Assets.xcassets */,
 				2DC87BF42857907D00B14D4A /* MainMenu.xib */,
 				2DC87BF72857907D00B14D4A /* main.m */,
@@ -133,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DC87BF82857907D00B14D4A /* main.m in Sources */,
+				2DC87C422859012700B14D4A /* NSColor+NSColor_RandomColor.m in Sources */,
 				2DC87BF12857907800B14D4A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

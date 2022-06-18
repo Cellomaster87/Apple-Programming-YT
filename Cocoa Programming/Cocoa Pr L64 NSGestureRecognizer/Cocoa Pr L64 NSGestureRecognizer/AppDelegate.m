@@ -47,6 +47,7 @@
 
 - (IBAction)magnifyView:(NSMagnificationGestureRecognizer *)sender {
     CGFloat magnification = sender.magnification + 1.0;
+    NSLog(@"Magnification: %f", magnification);
     NSView *view = sender.view;
     CGAffineTransform transform = CGAffineTransformMakeScale(magnification, magnification);
     [[view layer] setAffineTransform:transform];
@@ -55,6 +56,7 @@
 
 - (IBAction)rotateView:(NSRotationGestureRecognizer *)sender {
     CGFloat rotation = sender.rotation;
+    NSLog(@"Rotation: %f", rotation);
     NSView *view = sender.view;
     CGAffineTransform transform = CGAffineTransformMakeRotation(rotation);
     [[view layer] setAffineTransform:transform];

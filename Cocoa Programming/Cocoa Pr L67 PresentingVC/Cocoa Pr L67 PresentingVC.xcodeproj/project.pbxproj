@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D895ED2287844D2004C1751 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D895ED0287844D2004C1751 /* InitialViewController.m */; };
+		2D895ED3287844D2004C1751 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D895ED1287844D2004C1751 /* InitialViewController.xib */; };
+		2D895ED728784561004C1751 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D895ED528784561004C1751 /* ModalViewController.m */; };
+		2D895ED828784561004C1751 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D895ED628784561004C1751 /* ModalViewController.xib */; };
+		2D895EDB2878485B004C1751 /* ModalAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D895EDA2878485B004C1751 /* ModalAnimator.m */; };
 		2DA20ADC287779F9005942CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20ADB287779F9005942CE /* AppDelegate.m */; };
 		2DA20ADE287779FB005942CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA20ADD287779FB005942CE /* Assets.xcassets */; };
 		2DA20AE1287779FB005942CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA20ADF287779FB005942CE /* MainMenu.xib */; };
 		2DA20AE3287779FB005942CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20AE2287779FB005942CE /* main.m */; };
-		2DA20AEC28777A7D005942CE /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA20AEB28777A7D005942CE /* InitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D895ECF287844D2004C1751 /* InitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		2D895ED0287844D2004C1751 /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		2D895ED1287844D2004C1751 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		2D895ED428784561004C1751 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		2D895ED528784561004C1751 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		2D895ED628784561004C1751 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		2D895ED92878485B004C1751 /* ModalAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalAnimator.h; sourceTree = "<group>"; };
+		2D895EDA2878485B004C1751 /* ModalAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalAnimator.m; sourceTree = "<group>"; };
 		2DA20AD7287779F9005942CE /* Cocoa Pr L67 PresentingVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L67 PresentingVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA20ADA287779F9005942CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DA20ADB287779F9005942CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -22,8 +34,6 @@
 		2DA20AE0287779FB005942CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2DA20AE2287779FB005942CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DA20AE4287779FB005942CE /* Cocoa_Pr_L67_PresentingVC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L67_PresentingVC.entitlements; sourceTree = "<group>"; };
-		2DA20AEA28777A7D005942CE /* InitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
-		2DA20AEB28777A7D005942CE /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,17 @@
 			children = (
 				2DA20ADA287779F9005942CE /* AppDelegate.h */,
 				2DA20ADB287779F9005942CE /* AppDelegate.m */,
+				2D895ED92878485B004C1751 /* ModalAnimator.h */,
+				2D895EDA2878485B004C1751 /* ModalAnimator.m */,
+				2D895ECF287844D2004C1751 /* InitialViewController.h */,
+				2D895ED0287844D2004C1751 /* InitialViewController.m */,
+				2D895ED428784561004C1751 /* ModalViewController.h */,
+				2D895ED528784561004C1751 /* ModalViewController.m */,
+				2D895ED628784561004C1751 /* ModalViewController.xib */,
+				2D895ED1287844D2004C1751 /* InitialViewController.xib */,
 				2DA20ADD287779FB005942CE /* Assets.xcassets */,
 				2DA20ADF287779FB005942CE /* MainMenu.xib */,
 				2DA20AE2287779FB005942CE /* main.m */,
-				2DA20AEA28777A7D005942CE /* InitialViewController.h */,
-				2DA20AEB28777A7D005942CE /* InitialViewController.m */,
 				2DA20AE4287779FB005942CE /* Cocoa_Pr_L67_PresentingVC.entitlements */,
 			);
 			path = "Cocoa Pr L67 PresentingVC";
@@ -125,8 +141,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D895ED828784561004C1751 /* ModalViewController.xib in Resources */,
 				2DA20ADE287779FB005942CE /* Assets.xcassets in Resources */,
 				2DA20AE1287779FB005942CE /* MainMenu.xib in Resources */,
+				2D895ED3287844D2004C1751 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA20AEC28777A7D005942CE /* InitialViewController.m in Sources */,
+				2D895ED728784561004C1751 /* ModalViewController.m in Sources */,
+				2D895ED2287844D2004C1751 /* InitialViewController.m in Sources */,
+				2D895EDB2878485B004C1751 /* ModalAnimator.m in Sources */,
 				2DA20AE3287779FB005942CE /* main.m in Sources */,
 				2DA20ADC287779F9005942CE /* AppDelegate.m in Sources */,
 			);

@@ -6,16 +6,21 @@
 //
 
 #import "AppDelegate.h"
+#import "InitialViewController.h"
+#import "ModalViewController.h"
 
 @interface AppDelegate ()
-
 @property (strong) IBOutlet NSWindow *window;
+
+@property InitialViewController *initialVC;
 @end
 
 @implementation AppDelegate
+@synthesize initialVC;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    initialVC = [[InitialViewController alloc] init];
+    [[self window] setContentViewController:initialVC];
 }
 
 

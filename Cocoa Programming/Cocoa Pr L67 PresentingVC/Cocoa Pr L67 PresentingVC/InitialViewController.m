@@ -2,10 +2,12 @@
 //  InitialViewController.m
 //  Cocoa Pr L67 PresentingVC
 //
-//  Created by Michele Galvagno on 07/07/22.
+//  Created by Michele Galvagno on 08/07/22.
 //
 
 #import "InitialViewController.h"
+#import "ModalViewController.h"
+#import "ModalAnimator.h"
 
 @interface InitialViewController ()
 
@@ -15,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    
+    [[self.view layer] setBackgroundColor:NSColor.systemRedColor.CGColor];
+}
+
+- (IBAction)presentModalVC:(NSButton *)sender {
+    NSLog(@"Present button pressed");
+    ModalAnimator *animator = [[ModalAnimator alloc] init];
+    ModalViewController *modalVC = [[ModalViewController alloc] init];
+    [self presentViewController:modalVC animator:animator];
 }
 
 @end

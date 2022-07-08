@@ -1,5 +1,5 @@
 //
-//  InitialViewController.h
+//  ModalViewController.h
 //  Cocoa Pr L67 PresentingVC
 //
 //  Created by Michele Galvagno on 08/07/22.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InitialViewController : NSViewController
+@interface ModalViewController : NSViewController
 
 @end
 

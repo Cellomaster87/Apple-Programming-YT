@@ -14,7 +14,7 @@
     if (self) {
         [self setWantsLayer:YES];
         [[self layer] setBackgroundColor:[[NSColor colorWithCalibratedWhite:0 alpha:0.5] CGColor]];
-        [self setAlphaValue:0];
+        [self setAlphaValue:1];
     }
     
     return self;
@@ -42,6 +42,15 @@
 @synthesize centerYConstraint;
 
 - (void)animateDismissalOfViewController:(nonnull NSViewController *)viewController fromViewController:(nonnull NSViewController *)fromViewController {
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
+        [[self.backgroundView animator] setAlphaValue:0];
+        [[self.centerYConstraint animator] setConstant:100];
+    } completionHandler:^{
+        [[self backgroundView] removeFromSuperview];
+    }];
+}
+
+- (void)animatePresentationOfViewController:(nonnull NSViewController *)viewController fromViewController:(nonnull NSViewController *)fromViewController {
     backgroundView = [[BackgroundView alloc] initWithFrame:CGRectZero];
     NSView *contentView = [fromViewController view];
     [backgroundView setFrame:[contentView bounds]];
@@ -64,15 +73,6 @@
         [context setDuration:0.5];
         [[self.backgroundView animator] setAlphaValue:1];
         [[self.centerYConstraint animator] setConstant:0];
-    }];
-}
-
-- (void)animatePresentationOfViewController:(nonnull NSViewController *)viewController fromViewController:(nonnull NSViewController *)fromViewController {
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
-        [[self.backgroundView animator] setAlphaValue:0];
-        [[self.centerYConstraint animator] setConstant:100];
-    } completionHandler:^{
-        [[self backgroundView] removeFromSuperview];
     }];
 }
 

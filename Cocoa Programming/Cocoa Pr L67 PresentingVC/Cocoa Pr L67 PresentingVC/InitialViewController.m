@@ -22,7 +22,6 @@
 }
 
 - (IBAction)presentModalVC:(NSButton *)sender {
-    NSLog(@"Present button pressed");
     ModalAnimator *animator = [[ModalAnimator alloc] init];
     ModalViewController *modalVC = [[ModalViewController alloc] init];
     [self presentViewController:modalVC animator:animator];

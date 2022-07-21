@@ -106,6 +106,4 @@ extension CollectionViewController: NSCollectionViewDataSource {
         
         return item
     }
-    
-    
 }

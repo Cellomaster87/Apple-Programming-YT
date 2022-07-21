@@ -33,10 +33,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
  2. in the created XIB, add a collection view and pin it to all sides. W/Assistant Editor create an outlet for it. Connect the File's Owner to the outlet and the Collection View to the File's Owner as Data Source.
  3. create a new CollectionViewItem:NSCollectionViewItem with a XIB;
     a. in the Swift file create the reuseIdentifier property;
-    b. in the XIB add a box, make it red w/corner radius 10, add a label and center it.
+    b. in the XIB add a custom box, make it red w/corner radius 10, add a label and center it.
     c. Connect the File's Owner Text Field outlet to the Label
  4. in AppDelegate > applicationDidFinishLaunching, set the window's content view controller to be an instance of our CollectionViewController
- 5. in CollectionViewController.swift
+ 5. extend CollectionViewController
+ 6. complete the viewDidLoad function
+ 7. in CollectionViewController.swift
     a. create the private function listLayout()
     b. in viewDidLoad, assign it to the collectionView's collectionViewLayout
     c. create the private function gridLayout() and assign it instead

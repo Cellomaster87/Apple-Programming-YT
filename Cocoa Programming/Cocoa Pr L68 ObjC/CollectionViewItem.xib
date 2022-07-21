@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem">
+            <connections>
+                <outlet property="textField" destination="5nb-En-3pk" id="XXd-GZ-6pn"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="10" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="GNo-j4-iMg">
+                    <rect key="frame" x="0.0" y="0.0" width="272" height="272"/>
+                    <view key="contentView" id="HN1-hG-L6l">
+                        <rect key="frame" x="1" y="1" width="270" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5nb-En-3pk">
+                                <rect key="frame" x="117" y="127" width="37" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="MgY-aA-KUw">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5nb-En-3pk" firstAttribute="centerX" secondItem="HN1-hG-L6l" secondAttribute="centerX" id="5UU-sp-xJ0"/>
+                            <constraint firstItem="5nb-En-3pk" firstAttribute="centerY" secondItem="HN1-hG-L6l" secondAttribute="centerY" id="mbp-H7-CtO"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GNo-j4-iMg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="BQF-Cl-sdA"/>
+                <constraint firstAttribute="bottom" secondItem="GNo-j4-iMg" secondAttribute="bottom" id="ogZ-HP-iiG"/>
+                <constraint firstItem="GNo-j4-iMg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="sUV-n9-Nbl"/>
+                <constraint firstAttribute="trailing" secondItem="GNo-j4-iMg" secondAttribute="trailing" id="y0f-On-52F"/>
+            </constraints>
+            <point key="canvasLocation" x="35" y="154"/>
+        </customView>
+    </objects>
+</document>

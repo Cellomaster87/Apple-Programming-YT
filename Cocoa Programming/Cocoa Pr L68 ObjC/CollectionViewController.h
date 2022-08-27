@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CollectionViewController : NSViewController <NSCollectionViewDataSource>
+@interface CollectionViewController : NSViewController <NSCollectionViewDataSource, NSCollectionLayoutEnvironment>
 
 @end
 

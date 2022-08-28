@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DD995FE28BBA7D2001E7D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD995FD28BBA7D2001E7D8F /* AppDelegate.swift */; };
+		2DD9960028BBA7D5001E7D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DD995FF28BBA7D5001E7D8F /* Assets.xcassets */; };
+		2DD9960328BBA7D5001E7D8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9960128BBA7D5001E7D8F /* MainMenu.xib */; };
+		2DD9960C28BBA8E0001E7D8F /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9960A28BBA8E0001E7D8F /* MainWindowController.swift */; };
+		2DD9960D28BBA8E0001E7D8F /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9960B28BBA8E0001E7D8F /* MainWindowController.xib */; };
+		2DD9961028BBAA7C001E7D8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9960E28BBAA7C001E7D8F /* ViewController.swift */; };
+		2DD9961128BBAA7C001E7D8F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9960F28BBAA7C001E7D8F /* ViewController.xib */; };
+		2DD9961328BBABD7001E7D8F /* CodeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9961228BBABD7001E7D8F /* CodeWindowController.swift */; };
+		2DD9961528BBAC7C001E7D8F /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9961428BBAC7C001E7D8F /* Window.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DD995FA28BBA7D2001E7D8F /* Cocoa Pr L69 NSWindowController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa Pr L69 NSWindowController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD995FD28BBA7D2001E7D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DD995FF28BBA7D5001E7D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DD9960228BBA7D5001E7D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2DD9960428BBA7D5001E7D8F /* Cocoa_Pr_L69_NSWindowController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_Pr_L69_NSWindowController.entitlements; sourceTree = "<group>"; };
+		2DD9960A28BBA8E0001E7D8F /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		2DD9960B28BBA8E0001E7D8F /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		2DD9960E28BBAA7C001E7D8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DD9960F28BBAA7C001E7D8F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2DD9961228BBABD7001E7D8F /* CodeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeWindowController.swift; sourceTree = "<group>"; };
+		2DD9961428BBAC7C001E7D8F /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DD995F728BBA7D2001E7D8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DD995F128BBA7D2001E7D8F = {
+			isa = PBXGroup;
+			children = (
+				2DD995FC28BBA7D2001E7D8F /* Cocoa Pr L69 NSWindowController */,
+				2DD995FB28BBA7D2001E7D8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DD995FB28BBA7D2001E7D8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DD995FA28BBA7D2001E7D8F /* Cocoa Pr L69 NSWindowController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DD995FC28BBA7D2001E7D8F /* Cocoa Pr L69 NSWindowController */ = {
+			isa = PBXGroup;
+			children = (
+				2DD995FD28BBA7D2001E7D8F /* AppDelegate.swift */,
+				2DD9960A28BBA8E0001E7D8F /* MainWindowController.swift */,
+				2DD9961228BBABD7001E7D8F /* CodeWindowController.swift */,
+				2DD9961428BBAC7C001E7D8F /* Window.swift */,
+				2DD9960B28BBA8E0001E7D8F /* MainWindowController.xib */,
+				2DD9960E28BBAA7C001E7D8F /* ViewController.swift */,
+				2DD9960F28BBAA7C001E7D8F /* ViewController.xib */,
+				2DD995FF28BBA7D5001E7D8F /* Assets.xcassets */,
+				2DD9960128BBA7D5001E7D8F /* MainMenu.xib */,
+				2DD9960428BBA7D5001E7D8F /* Cocoa_Pr_L69_NSWindowController.entitlements */,
+			);
+			path = "Cocoa Pr L69 NSWindowController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DD995F928BBA7D2001E7D8F /* Cocoa Pr L69 NSWindowController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DD9960728BBA7D5001E7D8F /* Build configuration list for PBXNativeTarget "Cocoa Pr L69 NSWindowController" */;
+			buildPhases = (
+				2DD995F628BBA7D2001E7D8F /* Sources */,
+				2DD995F728BBA7D2001E7D8F /* Frameworks */,
+				2DD995F828BBA7D2001E7D8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cocoa Pr L69 NSWindowController";
+			productName = "Cocoa Pr L69 NSWindowController";
+			productReference = 2DD995FA28BBA7D2001E7D8F /* Cocoa Pr L69 NSWindowController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DD995F228BBA7D2001E7D8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2DD995F928BBA7D2001E7D8F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2DD995F528BBA7D2001E7D8F /* Build configuration list for PBXProject "Cocoa Pr L69 NSWindowController" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DD995F128BBA7D2001E7D8F;
+			productRefGroup = 2DD995FB28BBA7D2001E7D8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DD995F928BBA7D2001E7D8F /* Cocoa Pr L69 NSWindowController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DD995F828BBA7D2001E7D8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD9960028BBA7D5001E7D8F /* Assets.xcassets in Resources */,
+				2DD9960D28BBA8E0001E7D8F /* MainWindowController.xib in Resources */,
+				2DD9961128BBAA7C001E7D8F /* ViewController.xib in Resources */,
+				2DD9960328BBA7D5001E7D8F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DD995F628BBA7D2001E7D8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD9961328BBABD7001E7D8F /* CodeWindowController.swift in Sources */,
+				2DD9961528BBAC7C001E7D8F /* Window.swift in Sources */,
+				2DD9961028BBAA7C001E7D8F /* ViewController.swift in Sources */,
+				2DD9960C28BBA8E0001E7D8F /* MainWindowController.swift in Sources */,
+				2DD995FE28BBA7D2001E7D8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DD9960128BBA7D5001E7D8F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DD9960228BBA7D5001E7D8F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DD9960528BBA7D5001E7D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DD9960628BBA7D5001E7D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2DD9960828BBA7D5001E7D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L69 NSWindowController/Cocoa_Pr_L69_NSWindowController.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L69-NSWindowController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2DD9960928BBA7D5001E7D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cocoa Pr L69 NSWindowController/Cocoa_Pr_L69_NSWindowController.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68Z4323Q26;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelegalvagno.Cocoa-Pr-L69-NSWindowController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DD995F528BBA7D2001E7D8F /* Build configuration list for PBXProject "Cocoa Pr L69 NSWindowController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD9960528BBA7D5001E7D8F /* Debug */,
+				2DD9960628BBA7D5001E7D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DD9960728BBA7D5001E7D8F /* Build configuration list for PBXNativeTarget "Cocoa Pr L69 NSWindowController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD9960828BBA7D5001E7D8F /* Debug */,
+				2DD9960928BBA7D5001E7D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DD995F228BBA7D2001E7D8F /* Project object */;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SystemIconCollectionViewItem" customModule="Cocoa_Pr_L70_NSCollectionView_Diffable_Data_Source" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="VVn-tq-IDP" id="af4-Cj-Aw4"/>
+                <outlet property="textField" destination="p2k-aW-NEJ" id="KcY-xj-CZY"/>
+                <outlet property="view" destination="KoH-QH-bel" id="Wya-vg-ERG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="KoH-QH-bel">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VVn-tq-IDP">
+                    <rect key="frame" x="20" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TUs-wb-0et"/>
+                        <constraint firstAttribute="width" constant="50" id="kIF-Zc-NF1"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="Rni-9l-IeE"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p2k-aW-NEJ">
+                    <rect key="frame" x="76" y="37" width="386" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" title="Label" id="i8e-1F-49F">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="p2k-aW-NEJ" secondAttribute="trailing" constant="20" id="70s-xD-JIw"/>
+                <constraint firstItem="VVn-tq-IDP" firstAttribute="leading" secondItem="KoH-QH-bel" secondAttribute="leading" constant="20" symbolic="YES" id="7Fl-5m-1U5"/>
+                <constraint firstItem="VVn-tq-IDP" firstAttribute="centerY" secondItem="KoH-QH-bel" secondAttribute="centerY" id="F6H-75-VkT"/>
+                <constraint firstItem="p2k-aW-NEJ" firstAttribute="leading" secondItem="VVn-tq-IDP" secondAttribute="trailing" constant="8" id="tFb-WO-lgE"/>
+                <constraint firstItem="p2k-aW-NEJ" firstAttribute="centerY" secondItem="KoH-QH-bel" secondAttribute="centerY" id="u42-Wd-0Dm"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="243"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSApplicationIcon" width="32" height="32"/>
+    </resources>
+</document>

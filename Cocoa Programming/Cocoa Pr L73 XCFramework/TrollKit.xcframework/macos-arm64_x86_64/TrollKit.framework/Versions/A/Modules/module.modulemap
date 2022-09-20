@@ -1,0 +1,11 @@
+framework module TrollKit {
+  umbrella header "TrollKit.h"
+
+  export *
+  module * { export * }
+}
+
+module TrollKit.Swift {
+  header "TrollKit-Swift.h"
+  requires objc
+}

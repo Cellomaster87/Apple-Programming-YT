@@ -1,0 +1,204 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Cocoa",
+        "printedName": "Cocoa",
+        "declKind": "Import",
+        "moduleName": "TrollKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrollWindowController",
+        "printedName": "TrollWindowController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrollWindowController",
+                "printedName": "TrollKit.TrollWindowController",
+                "usr": "c:@M@TrollKit@objc(cs)TrollWindowController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrollKit@objc(cs)TrollWindowController(im)init",
+            "mangledName": "$s8TrollKit0A16WindowControllerCACycfc",
+            "moduleName": "TrollKit",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(window:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrollWindowController",
+                "printedName": "TrollKit.TrollWindowController",
+                "usr": "c:@M@TrollKit@objc(cs)TrollWindowController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AppKit.NSWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSWindow",
+                    "printedName": "AppKit.NSWindow",
+                    "usr": "c:objc(cs)NSWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrollKit@objc(cs)TrollWindowController(im)initWithWindow:",
+            "mangledName": "$s8TrollKit0A16WindowControllerC6windowACSo8NSWindowCSg_tcfc",
+            "moduleName": "TrollKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithWindow:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrollKit.TrollWindowController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrollWindowController",
+                    "printedName": "TrollKit.TrollWindowController",
+                    "usr": "c:@M@TrollKit@objc(cs)TrollWindowController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrollKit@objc(cs)TrollWindowController(im)initWithCoder:",
+            "mangledName": "$s8TrollKit0A16WindowControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "TrollKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrollKit@objc(cs)TrollWindowController",
+        "mangledName": "$s8TrollKit0A16WindowControllerC",
+        "moduleName": "TrollKit",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSWindowController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AppKit.NSWindowController",
+          "AppKit.NSResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

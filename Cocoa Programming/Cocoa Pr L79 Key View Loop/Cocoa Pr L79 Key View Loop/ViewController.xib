@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewController" customModule="Cocoa_Pr_L79_Key_View_Loop" customModuleProvider="target">
+            <connections>
+                <outlet property="initialFirstResponder" destination="XJC-wG-6BX" id="oTn-85-oB4"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-uS-nsZ">
+                    <rect key="frame" x="85" y="236" width="51" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Player 1" id="rBz-Sw-rY7">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XJC-wG-6BX">
+                    <rect key="frame" x="20" y="207" width="180" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="CLy-y5-N2W">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="5kD-oB-FYU" id="tkt-LH-3ge"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5kD-oB-FYU">
+                    <rect key="frame" x="73" y="172" width="75" height="32"/>
+                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8WL-aI-8SM">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="DYJ-js-oxN" id="IlT-tA-rX1"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vQa-vh-vqY">
+                    <rect key="frame" x="344" y="238" width="53" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Player 2" id="8xG-p5-IaG">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DYJ-js-oxN">
+                    <rect key="frame" x="280" y="209" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="0Zi-3K-VLa"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="sfl-um-F3K">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="maQ-d0-kyV" id="JQ3-1x-7Ba"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-d0-kyV">
+                    <rect key="frame" x="333" y="174" width="75" height="32"/>
+                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wGF-Kv-MUO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="XJC-wG-6BX" id="IhI-7k-F7F"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vQa-vh-vqY" firstAttribute="centerX" secondItem="DYJ-js-oxN" secondAttribute="centerX" id="6CA-1y-fa5"/>
+                <constraint firstItem="T4u-uS-nsZ" firstAttribute="centerX" secondItem="XJC-wG-6BX" secondAttribute="centerX" id="798-nH-S9j"/>
+                <constraint firstItem="maQ-d0-kyV" firstAttribute="top" secondItem="DYJ-js-oxN" secondAttribute="bottom" constant="8" symbolic="YES" id="7D4-Ow-plD"/>
+                <constraint firstItem="T4u-uS-nsZ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="ChL-Uv-cSW"/>
+                <constraint firstItem="XJC-wG-6BX" firstAttribute="top" secondItem="T4u-uS-nsZ" secondAttribute="bottom" constant="8" symbolic="YES" id="E1Q-2W-ofB"/>
+                <constraint firstItem="DYJ-js-oxN" firstAttribute="leading" secondItem="XJC-wG-6BX" secondAttribute="trailing" constant="80" id="I77-DS-9cI"/>
+                <constraint firstItem="vQa-vh-vqY" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="18" id="MPO-Iz-YVJ"/>
+                <constraint firstItem="DYJ-js-oxN" firstAttribute="top" secondItem="vQa-vh-vqY" secondAttribute="bottom" constant="8" symbolic="YES" id="MY1-nd-Bl1"/>
+                <constraint firstItem="XJC-wG-6BX" firstAttribute="top" secondItem="T4u-uS-nsZ" secondAttribute="bottom" constant="8" symbolic="YES" id="OBY-Mx-G9e"/>
+                <constraint firstItem="DYJ-js-oxN" firstAttribute="top" secondItem="vQa-vh-vqY" secondAttribute="bottom" constant="8" symbolic="YES" id="PaC-kI-gO0"/>
+                <constraint firstItem="5kD-oB-FYU" firstAttribute="top" secondItem="XJC-wG-6BX" secondAttribute="bottom" constant="8" symbolic="YES" id="YOv-3S-GJh"/>
+                <constraint firstItem="XJC-wG-6BX" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="g2a-2t-IfG"/>
+                <constraint firstAttribute="trailing" secondItem="DYJ-js-oxN" secondAttribute="trailing" constant="20" symbolic="YES" id="jc0-b0-u11"/>
+                <constraint firstItem="5kD-oB-FYU" firstAttribute="centerX" secondItem="XJC-wG-6BX" secondAttribute="centerX" id="nVt-eI-fIW"/>
+                <constraint firstItem="maQ-d0-kyV" firstAttribute="centerX" secondItem="DYJ-js-oxN" secondAttribute="centerX" id="pdf-dj-toO"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="154"/>
+        </customView>
+    </objects>
+</document>

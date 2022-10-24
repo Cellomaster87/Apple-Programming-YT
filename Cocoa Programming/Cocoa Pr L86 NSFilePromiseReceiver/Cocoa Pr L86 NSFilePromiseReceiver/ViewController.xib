@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewController" customModule="Cocoa_Pr_L86_NSFilePromiseReceiver" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="ImageDropView" customModule="Cocoa_Pr_L86_NSFilePromiseReceiver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uRi-jO-Xia">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1Fi-aB-b3p"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uRi-jO-Xia" secondAttribute="bottom" id="M80-Gi-lOe"/>
+                <constraint firstItem="uRi-jO-Xia" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Xbq-UK-mp3"/>
+                <constraint firstItem="uRi-jO-Xia" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="amv-Fh-Yhs"/>
+                <constraint firstAttribute="trailing" secondItem="uRi-jO-Xia" secondAttribute="trailing" id="s9E-Jp-dVj"/>
+            </constraints>
+            <connections>
+                <outlet property="delegate" destination="-2" id="H6V-fw-3Ox"/>
+                <outlet property="imageView" destination="uRi-jO-Xia" id="Z2a-aU-Jtl"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="154"/>
+        </customView>
+    </objects>
+</document>

@@ -29,5 +29,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
  3. setup the ImageDropView swift file
  4. AppDelegate: setup the window's contentViewController to be an instance of ViewController
  
+ LESSON 87
+ 1. in ImageDropView, add the rectForDrawingImage(with:)
+ 2. in ViewController, add the ImageError enumeration, and the writeBlackAndWhite(image:to:)
+ 3. in ImageDropView:
+    a. add the mouseDown(with:) method
+    b. add an extension that conforms to NSDraggingSource and fulfills the required method
+    c. in the protocol at the top of the file, add the new pasteboardWriter(forImageDropView:) method
+ 4. in ViewController (who is our delegate):
+    a. implement the pasteboardWriter(forImageDropView:) method
+    b. extend ViewController to conform to NSFilePromiseProviderDelegate
+ 
+ 
  */
 

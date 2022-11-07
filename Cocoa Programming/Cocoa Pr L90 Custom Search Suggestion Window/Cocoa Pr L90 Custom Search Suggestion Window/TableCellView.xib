@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="gra-HC-aml" customClass="TableCellView" customModule="Cocoa_Pr_L90_Custom_Search_Suggestion_Window" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="LIE-8f-C1O">
+                    <rect key="frame" x="0.0" y="8" width="492" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="FPf-Co-d8I">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LIE-8f-C1O" secondAttribute="bottom" constant="8" id="EXP-5Z-gHe"/>
+                <constraint firstItem="LIE-8f-C1O" firstAttribute="leading" secondItem="gra-HC-aml" secondAttribute="leading" constant="2" id="FYp-VG-Jmc"/>
+                <constraint firstAttribute="trailing" secondItem="LIE-8f-C1O" secondAttribute="trailing" constant="2" id="H0X-C6-aOz"/>
+                <constraint firstItem="LIE-8f-C1O" firstAttribute="top" secondItem="gra-HC-aml" secondAttribute="top" constant="8" id="Skw-dX-vgi"/>
+            </constraints>
+            <connections>
+                <outlet property="textField" destination="LIE-8f-C1O" id="ca4-3p-Jxw"/>
+            </connections>
+            <point key="canvasLocation" x="-164.5" y="126"/>
+        </tableCellView>
+    </objects>
+</document>

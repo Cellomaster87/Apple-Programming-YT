@@ -38,6 +38,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
  3. in AppDelegate create a MainWindowController instance as a lazily instanciated property, then show its window in `applicationDidFinishLaunching(_:)`
  4. complete the template for the TableCellView Swift File
  5. Create a new SuggestionsWindowController: NSWindowController with XIB. In IB, deselect Show Title Bar and Visible At Launch for the Window
+ 6. SuggestionsViewController.swift:
+    a. complete the two extensions
+    b. complete the `viewDidLoad` function
+    c. create the `orderOut` and `showSuggestions(_:for:)` methods
+ 7. MainWindowController.swift:
+    a. create the extension to add conformance to `NSControlTextEditingDelegate
+    b. create the a lazy var for an instance of `SuggestionsWindowController()`
+    c. in the extension add the `controlTextDidChange(_:)` and `control(_:textView:doCommandBy:)` methods
+ 8. back in SuggestionsViewController.swift, create the two methods `moveUp()` and `moveDown()`.
+ 9. back in MainWindowController.swift
+    a. add the call to these two methods in the `control(_:textView:doCommandBy:)` method
+    b. add another condition for when you want to press enter
+ 10. in SuggestionsViewController, create the `currentSuggestion` property
+ 11. in MainWindowController, complete the `control(_:textView:doCommandBy:)` method
+ 
+ 
  
  
  

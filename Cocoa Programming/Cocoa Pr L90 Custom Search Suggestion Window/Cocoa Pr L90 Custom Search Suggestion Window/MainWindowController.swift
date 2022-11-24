@@ -13,6 +13,8 @@ class MainWindowController: NSWindowController {
     
     private let suggestions = ["Al", "Bethany", "Billy", "Bob", "Bobby", "Lucas"]
     
+    lazy var suggestionsWindowController = SuggestionsWindowController()
+    
     convenience init() {
         self.init(windowNibName: String(describing: Self.self))
     }
@@ -26,4 +28,36 @@ class MainWindowController: NSWindowController {
         return results
     }
         
+}
+
+extension MainWindowController: NSControlTextEditingDelegate {
+    func controlTextDidChange(_ obj: Notification) {
+        let filteredSuggestions = suggestions(for: searchField.stringValue)
+        suggestionsWindowController.showSuggestions(filteredSuggestions, for: searchField)
+    }
+    
+    func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
+        if commandSelector == #selector(moveUp(_:)) {
+            suggestionsWindowController.moveUp()
+            
+            return true
+        }
+        
+        if commandSelector == #selector(moveDown(_:)) {
+            suggestionsWindowController.moveDown()
+            
+            return true
+        }
+        
+        if commandSelector == #selector(insertNewline(_:)) {
+            guard let suggestion = suggestionsWindowController.currentSuggestion else { return false }
+            searchField.stringValue = suggestion
+            resultsLabel.stringValue = suggestion
+            suggestionsWindowController.orderOut()
+            
+            return true
+        }
+        
+        return false
+    }
 }

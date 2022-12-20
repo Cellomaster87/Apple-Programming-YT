@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewController" customModule="Cocoa_Pr_L94_Invalidating" customModuleProvider="target">
+            <connections>
+                <outlet property="colorWell" destination="Wyg-05-Fb3" id="Xct-rM-8FW"/>
+                <outlet property="invalidatingView" destination="IkW-P6-1nT" id="iKj-YN-cLd"/>
+                <outlet property="isBigCheckbox" destination="pSX-Ko-YOF" id="buI-vO-hb3"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="321"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="25" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-hK-xmq">
+                    <rect key="frame" x="20" y="232" width="158" height="69"/>
+                    <subviews>
+                        <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="Wyg-05-Fb3">
+                            <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="69" id="Tqz-hQ-O5L"/>
+                                <constraint firstAttribute="width" constant="69" id="jru-tQ-63R"/>
+                            </constraints>
+                            <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </colorWell>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pSX-Ko-YOF">
+                            <rect key="frame" x="92" y="26" width="66" height="18"/>
+                            <buttonCell key="cell" type="check" title="Is Big?" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Aiw-PV-Ovo">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NgY-hK-xmq" secondAttribute="height" multiplier="158:69" id="GKF-H9-ZDu"/>
+                        <constraint firstAttribute="height" constant="69" id="IFJ-cL-xjg"/>
+                        <constraint firstAttribute="width" constant="158" id="N2V-DI-MRe"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="IkW-P6-1nT" customClass="InvalidatingView" customModule="Cocoa_Pr_L94_Invalidating" customModuleProvider="target">
+                    <rect key="frame" x="20" y="20" width="304" height="204"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NgY-hK-xmq" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="3fc-jp-YCT"/>
+                <constraint firstItem="IkW-P6-1nT" firstAttribute="top" secondItem="Wyg-05-Fb3" secondAttribute="bottom" constant="8" symbolic="YES" id="6Ga-tE-VN5"/>
+                <constraint firstItem="IkW-P6-1nT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="C4K-dc-stX"/>
+                <constraint firstItem="NgY-hK-xmq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="LmE-UJ-qxH"/>
+                <constraint firstAttribute="bottom" secondItem="IkW-P6-1nT" secondAttribute="bottom" constant="20" symbolic="YES" id="qUh-kF-QU6"/>
+                <constraint firstAttribute="trailing" secondItem="IkW-P6-1nT" secondAttribute="trailing" constant="20" symbolic="YES" id="rlv-KD-hUP"/>
+            </constraints>
+            <point key="canvasLocation" x="-13" y="178.5"/>
+        </customView>
+    </objects>
+</document>

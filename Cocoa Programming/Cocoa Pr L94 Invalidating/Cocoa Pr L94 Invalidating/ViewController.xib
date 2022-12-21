@@ -17,11 +17,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="344" height="321"/>
+            <rect key="frame" x="0.0" y="0.0" width="480" height="299"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="25" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-hK-xmq">
-                    <rect key="frame" x="20" y="232" width="158" height="69"/>
+                    <rect key="frame" x="20" y="210" width="158" height="69"/>
                     <subviews>
                         <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="Wyg-05-Fb3">
                             <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
@@ -30,6 +30,9 @@
                                 <constraint firstAttribute="width" constant="69" id="jru-tQ-63R"/>
                             </constraints>
                             <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="changeColor:" target="-2" id="9rO-PU-uqQ"/>
+                            </connections>
                         </colorWell>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pSX-Ko-YOF">
                             <rect key="frame" x="92" y="26" width="66" height="18"/>
@@ -37,6 +40,9 @@
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="changeSize:" target="-2" id="fhA-Xg-HOQ"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -54,12 +60,12 @@
                     </customSpacing>
                 </stackView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="IkW-P6-1nT" customClass="InvalidatingView" customModule="Cocoa_Pr_L94_Invalidating" customModuleProvider="target">
-                    <rect key="frame" x="20" y="20" width="304" height="204"/>
+                    <rect key="frame" x="20" y="20" width="440" height="182"/>
                 </customView>
             </subviews>
             <constraints>
                 <constraint firstItem="NgY-hK-xmq" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="3fc-jp-YCT"/>
-                <constraint firstItem="IkW-P6-1nT" firstAttribute="top" secondItem="Wyg-05-Fb3" secondAttribute="bottom" constant="8" symbolic="YES" id="6Ga-tE-VN5"/>
+                <constraint firstItem="IkW-P6-1nT" firstAttribute="top" secondItem="NgY-hK-xmq" secondAttribute="bottom" constant="8" symbolic="YES" id="6Ga-tE-VN5"/>
                 <constraint firstItem="IkW-P6-1nT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="C4K-dc-stX"/>
                 <constraint firstItem="NgY-hK-xmq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="LmE-UJ-qxH"/>
                 <constraint firstAttribute="bottom" secondItem="IkW-P6-1nT" secondAttribute="bottom" constant="20" symbolic="YES" id="qUh-kF-QU6"/>
